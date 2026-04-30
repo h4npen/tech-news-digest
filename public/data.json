@@ -1,0 +1,914 @@
+{
+  "generated_at": "2026-04-27T09:33:03.729035+09:00",
+  "articles": [
+    {
+      "source": "Zenn",
+      "title": "ハーネスエンジニアリングを楽にする Microsoft 製の新ツール「APM」ハンズオン",
+      "url": "https://zenn.dev/microsoft/articles/agent-package-manager-handson",
+      "raw_score": 70,
+      "published_at": "2026-04-25T22:16:58.804+09:00",
+      "normalized_score": 100.0,
+      "is_boosted": false
+    },
+    {
+      "source": "Qiita",
+      "title": "Claude CodeのVSCode拡張が使いやすいよ",
+      "url": "https://qiita.com/moritalous/items/3c5269610f26e23c5b04?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-26T00:39:30+09:00",
+      "normalized_score": 100,
+      "is_boosted": true
+    },
+    {
+      "source": "Qiita",
+      "title": "Codex Automations × 公式プラグイン 90 個で「AI 秘書」を組む — 朝 9 時 Issue トリアージ、17 時 Slack 要約",
+      "url": "https://qiita.com/nogataka/items/139148b11e416e23722b?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-26T13:14:18+09:00",
+      "normalized_score": 100,
+      "is_boosted": true
+    },
+    {
+      "source": "Hatebu",
+      "title": "Claude CodeのVSCode拡張が使いやすいよ - Qiita",
+      "url": "https://qiita.com/moritalous/items/3c5269610f26e23c5b04",
+      "raw_score": 292,
+      "published_at": "",
+      "normalized_score": 100,
+      "is_boosted": true
+    },
+    {
+      "source": "HackerNews",
+      "title": "I bought Friendster for $30k – Here's what I'm doing with it",
+      "url": "https://ca98am79.medium.com/i-bought-friendster-for-30k-heres-what-i-m-doing-with-it-d5e8ddb3991d",
+      "raw_score": 293,
+      "published_at": "2026-04-26T20:41:06+00:00",
+      "normalized_score": 100.0,
+      "is_boosted": false
+    },
+    {
+      "source": "Reddit: r/ObsidianMD",
+      "title": "Am I the only one incredibly skeptical of using any AI in my vault?",
+      "url": "https://old.reddit.com/r/ObsidianMD/comments/1swda00/am_i_the_only_one_incredibly_skeptical_of_using/",
+      "raw_score": 334,
+      "published_at": "2026-04-26T17:09:20+00:00",
+      "normalized_score": 100,
+      "is_boosted": true
+    },
+    {
+      "source": "Reddit: r/ffxiv",
+      "title": "I've never played DRG, is this a lore-accurate skill?",
+      "url": "https://old.reddit.com/r/ffxiv/comments/1svzfac/ive_never_played_drg_is_this_a_loreaccurate_skill/",
+      "raw_score": 1544,
+      "published_at": "2026-04-26T06:09:24+00:00",
+      "normalized_score": 100.0,
+      "is_boosted": false
+    },
+    {
+      "source": "HackerNews",
+      "title": "AI should elevate your thinking, not replace it",
+      "url": "https://www.koshyjohn.com/blog/ai-should-elevate-your-thinking-not-replace-it/",
+      "raw_score": 241,
+      "published_at": "2026-04-26T20:03:12+00:00",
+      "normalized_score": 95.9,
+      "is_boosted": true
+    },
+    {
+      "source": "Qiita",
+      "title": "WSL2からWindowsのブラウザやネイティブアプリをシームレスに起動する(xdg-open / wslu の活用)",
+      "url": "https://qiita.com/mfunaki/items/37dca9fdb5db427dfd7c?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-24T14:40:29+09:00",
+      "normalized_score": 95,
+      "is_boosted": false
+    },
+    {
+      "source": "Qiita",
+      "title": "Claude Code が途中で議論を忘れる問題 — auto-compact を PreCompact Hook で制御し、Discord から遠隔操作する",
+      "url": "https://qiita.com/nogataka/items/95efda0c7c9ea2405139?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-26T13:14:08+09:00",
+      "normalized_score": 95,
+      "is_boosted": true
+    },
+    {
+      "source": "Reddit: r/ffxiv",
+      "title": "My sugar riot cosplay at Na fanfest 26",
+      "url": "https://old.reddit.com/r/ffxiv/comments/1swf6kf/my_sugar_riot_cosplay_at_na_fanfest_26/",
+      "raw_score": 1457,
+      "published_at": "2026-04-26T18:19:35+00:00",
+      "normalized_score": 93.9,
+      "is_boosted": false
+    },
+    {
+      "source": "Hatebu",
+      "title": "PdMの仕事の半分は、AIに奪われた。残り半分で、私は病院に通い始めた｜oyamadashokiti",
+      "url": "https://note.com/oyamadashokiti/n/nb28796592d38",
+      "raw_score": 229,
+      "published_at": "",
+      "normalized_score": 93.1,
+      "is_boosted": true
+    },
+    {
+      "source": "Qiita",
+      "title": "その“親切な設計”、たぶん無駄です  - エンジニアがハマる「やりすぎ問題」-",
+      "url": "https://qiita.com/prum_hitomi/items/f94803dd326ef7c3eb25?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-24T09:58:45+09:00",
+      "normalized_score": 90,
+      "is_boosted": false
+    },
+    {
+      "source": "Qiita",
+      "title": "コードを1行も読ませずに、AIに脆弱性を100%特定させる方法（理論編）",
+      "url": "https://qiita.com/harupython/items/ed256553d10578cfec2a?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-26T19:08:51+09:00",
+      "normalized_score": 90,
+      "is_boosted": true
+    },
+    {
+      "source": "Hatebu",
+      "title": "Claude Code プラグインおすすめ 2026 — 公式マーケットプレイスから入れるべきプラグイン & MCP サーバー",
+      "url": "https://zenn.dev/ino_h/articles/2026-04-23-claude-code-plugins-ranking",
+      "raw_score": 219,
+      "published_at": "",
+      "normalized_score": 89.7,
+      "is_boosted": true
+    },
+    {
+      "source": "Zenn",
+      "title": "AIレビューの「で、これ合ってんの？」を減らす",
+      "url": "https://zenn.dev/nka21/articles/claude-code-multi-agent-reviewer",
+      "raw_score": 51,
+      "published_at": "2026-04-25T00:24:54.424+09:00",
+      "normalized_score": 87.1,
+      "is_boosted": true
+    },
+    {
+      "source": "Zenn",
+      "title": "Claude Code と二人七脚 DB 設計",
+      "url": "https://zenn.dev/techtrain_blog/articles/0991bc406b58e2",
+      "raw_score": 47,
+      "published_at": "2026-04-24T21:06:07.505+09:00",
+      "normalized_score": 81.2,
+      "is_boosted": true
+    },
+    {
+      "source": "Reddit: r/ffxiv",
+      "title": "To all the people who are complaining about evolved mode 1-1-1 vs 1-2-3 I got a solution for you !",
+      "url": "https://old.reddit.com/r/ffxiv/comments/1sw9vpy/to_all_the_people_who_are_complaining_about/",
+      "raw_score": 1057,
+      "published_at": "2026-04-26T15:02:20+00:00",
+      "normalized_score": 80.7,
+      "is_boosted": true
+    },
+    {
+      "source": "Qiita",
+      "title": "GPTとClaudeはどっちがいいのか、Microsoft 365 Copilot（Researcher）に考えてもらった",
+      "url": "https://qiita.com/Oyu3m/items/4ce133a69433d386507d?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-26T18:18:32+09:00",
+      "normalized_score": 80,
+      "is_boosted": true
+    },
+    {
+      "source": "HackerNews",
+      "title": "SWE-bench Verified no longer measures frontier coding capabilities",
+      "url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/",
+      "raw_score": 235,
+      "published_at": "2026-04-26T13:58:13+00:00",
+      "normalized_score": 78.7,
+      "is_boosted": false
+    },
+    {
+      "source": "Hatebu",
+      "title": "ナイジェリアから質問 『日本語は単なる「文字の言語」でなく、一種の「情報圧縮システム」のように感じるようになりました。』",
+      "url": "https://posfie.com/@Count_Down_000/p/7kwNEeh",
+      "raw_score": 230,
+      "published_at": "",
+      "normalized_score": 78.5,
+      "is_boosted": false
+    },
+    {
+      "source": "Hatebu",
+      "title": "200万行のテーブルにDDLを打つ前に知りたかったこと",
+      "url": "https://zenn.dev/shinagawa_web/articles/pm-saas-migration-risks",
+      "raw_score": 229,
+      "published_at": "",
+      "normalized_score": 78.1,
+      "is_boosted": false
+    },
+    {
+      "source": "Reddit: r/ObsidianMD",
+      "title": "1 year vault setup",
+      "url": "https://old.reddit.com/r/ObsidianMD/comments/1sw7oa2/1_year_vault_setup/",
+      "raw_score": 255,
+      "published_at": "2026-04-26T13:33:29+00:00",
+      "normalized_score": 76.3,
+      "is_boosted": false
+    },
+    {
+      "source": "Qiita",
+      "title": "売上予測WebアプリをFastAPI + Prophet + Reactで個人開発してリリースした話",
+      "url": "https://qiita.com/Mecharhythm/items/71f9e7c92d7ee0892a10?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-25T20:58:29+09:00",
+      "normalized_score": 75,
+      "is_boosted": true
+    },
+    {
+      "source": "HackerNews",
+      "title": "Sawe becomes first athlete to run a sub-two-hour marathon in a competitive race",
+      "url": "https://www.bbc.com/sport/athletics/articles/crm1m7e0zwzo",
+      "raw_score": 218,
+      "published_at": "2026-04-26T20:56:30+00:00",
+      "normalized_score": 72.4,
+      "is_boosted": false
+    },
+    {
+      "source": "Qiita",
+      "title": "個人的にjQuery メソッドチートシートまとめた",
+      "url": "https://qiita.com/ryo_sh/items/4a1c1f97932e190db333?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-26T12:14:25+09:00",
+      "normalized_score": 70,
+      "is_boosted": false
+    },
+    {
+      "source": "Hatebu",
+      "title": "Claude Code を安全に使おう勉強会 / Claude Code Security Basics",
+      "url": "https://speakerdeck.com/masahirokawahara/claude-code-security-basics",
+      "raw_score": 152,
+      "published_at": "",
+      "normalized_score": 66.4,
+      "is_boosted": true
+    },
+    {
+      "source": "Qiita",
+      "title": "PDF4LLM：LLM前処理ドキュメント処理レイヤー",
+      "url": "https://qiita.com/jamie-lemon/items/1b4a5c771cd8c1638915?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-25T00:05:26+09:00",
+      "normalized_score": 65,
+      "is_boosted": true
+    },
+    {
+      "source": "Zenn",
+      "title": "AIの成果物に責任を取る方法",
+      "url": "https://zenn.dev/headwaters/articles/68de421c45931b",
+      "raw_score": 35,
+      "published_at": "2026-04-24T08:40:05.071+09:00",
+      "normalized_score": 63.5,
+      "is_boosted": true
+    },
+    {
+      "source": "HackerNews",
+      "title": "Clay PCB Tutorial",
+      "url": "https://feministhackerspaces.cargo.site/Clay-PCB-Tutorial",
+      "raw_score": 186,
+      "published_at": "2026-04-26T16:02:14+00:00",
+      "normalized_score": 60.7,
+      "is_boosted": false
+    },
+    {
+      "source": "Qiita",
+      "title": "ブラウザだけで完結するCSIRT訓練プラットフォーム「CSIRT Ready」を作った話",
+      "url": "https://qiita.com/masa_py/items/70ddd373616e55ad929f?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-26T16:44:40+09:00",
+      "normalized_score": 55,
+      "is_boosted": false
+    },
+    {
+      "source": "Reddit: r/ffxiv",
+      "title": "Super proud of my gf’s Pandora cosplay at Fanfest 2026!",
+      "url": "https://old.reddit.com/r/ffxiv/comments/1swg3q5/super_proud_of_my_gfs_pandora_cosplay_at_fanfest/",
+      "raw_score": 858,
+      "published_at": "2026-04-26T18:53:41+00:00",
+      "normalized_score": 51.6,
+      "is_boosted": false
+    },
+    {
+      "source": "Qiita",
+      "title": "Claude Code に Codex の対立レビューを挟むと見えるもの — codex-plugin-cc で始めるセカンドオピニオン駆動開発",
+      "url": "https://qiita.com/nogataka/items/52dcdb315c54dddede01?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-24T11:45:02+09:00",
+      "normalized_score": 50,
+      "is_boosted": true
+    },
+    {
+      "source": "Zenn",
+      "title": "技術同人誌を作る技術",
+      "url": "https://zenn.dev/tokium_dev/articles/techbookfest20-making-of",
+      "raw_score": 35,
+      "published_at": "2026-04-24T08:00:07.117+09:00",
+      "normalized_score": 48.5,
+      "is_boosted": false
+    },
+    {
+      "source": "Qiita",
+      "title": "nginxのアクセスログをvector + ClickHouse + metabaseで可視化しよう",
+      "url": "https://qiita.com/katori_m/items/935a29940421e62020ee?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-25T01:16:06+09:00",
+      "normalized_score": 45,
+      "is_boosted": false
+    },
+    {
+      "source": "Hatebu",
+      "title": "コードを1行も読ませずに、AIに脆弱性を100%特定させる方法（理論編） - Qiita",
+      "url": "https://qiita.com/harupython/items/ed256553d10578cfec2a",
+      "raw_score": 85,
+      "published_at": "",
+      "normalized_score": 43.1,
+      "is_boosted": true
+    },
+    {
+      "source": "Reddit: r/ffxiv",
+      "title": "Final Fantasy XIV PS4 Support Will End Within Two Years, Director Warns: 'Start Saving for a PS5'",
+      "url": "https://old.reddit.com/r/ffxiv/comments/1swge4z/final_fantasy_xiv_ps4_support_will_end_within_two/",
+      "raw_score": 503,
+      "published_at": "2026-04-26T19:04:09+00:00",
+      "normalized_score": 41.6,
+      "is_boosted": true
+    },
+    {
+      "source": "Qiita",
+      "title": "Direct LiNGAM の原理",
+      "url": "https://qiita.com/bob3bob3/items/d6fb667ae15d51ce8040?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-25T22:43:56+09:00",
+      "normalized_score": 40,
+      "is_boosted": false
+    },
+    {
+      "source": "Qiita",
+      "title": "AI駆動開発で増えたMarkdownを快適に読むビューア「MarkShelf」を作った",
+      "url": "https://qiita.com/smi/items/ab0d3e9d61fb0297111a?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-25T22:25:12+09:00",
+      "normalized_score": 40,
+      "is_boosted": true
+    },
+    {
+      "source": "Reddit: r/ffxiv",
+      "title": "Is this how we’ll fix things in Evercold?",
+      "url": "https://old.reddit.com/r/ffxiv/comments/1sw8fx1/is_this_how_well_fix_things_in_evercold/",
+      "raw_score": 687,
+      "published_at": "2026-04-26T14:05:21+00:00",
+      "normalized_score": 39.6,
+      "is_boosted": false
+    },
+    {
+      "source": "Reddit: r/ffxiv",
+      "title": "Couldn’t make it to Fan Fest this year but still showed up to my local Ren Fair dressed as an Au Ra",
+      "url": "https://old.reddit.com/r/ffxiv/comments/1sw929h/couldnt_make_it_to_fan_fest_this_year_but_still/",
+      "raw_score": 443,
+      "published_at": "2026-04-26T14:30:25+00:00",
+      "normalized_score": 37.4,
+      "is_boosted": true
+    },
+    {
+      "source": "HackerNews",
+      "title": "Fast16: High-precision software sabotage 5 years before Stuxnet",
+      "url": "https://www.sentinelone.com/labs/fast16-mystery-shadowbrokers-reference-reveals-high-precision-software-sabotage-5-years-before-stuxnet/",
+      "raw_score": 122,
+      "published_at": "2026-04-26T20:18:37+00:00",
+      "normalized_score": 37.1,
+      "is_boosted": false
+    },
+    {
+      "source": "Zenn",
+      "title": "Claude Codeより安く開発できるOpenCodeを使ってみよう",
+      "url": "https://zenn.dev/xxishan/articles/9cb47819f835fa",
+      "raw_score": 16,
+      "published_at": "2026-04-25T16:00:17.816+09:00",
+      "normalized_score": 35.6,
+      "is_boosted": true
+    },
+    {
+      "source": "Reddit: r/ffxiv",
+      "title": "Fan Fest Ironmouse cover - Give It All",
+      "url": "https://old.reddit.com/r/ffxiv/comments/1sw8q11/fan_fest_ironmouse_cover_give_it_all/",
+      "raw_score": 609,
+      "published_at": "2026-04-26T14:17:02+00:00",
+      "normalized_score": 34.1,
+      "is_boosted": false
+    },
+    {
+      "source": "Reddit: r/ffxiv",
+      "title": "Hey! They read my question! What job mentors do you want to catch up with?",
+      "url": "https://old.reddit.com/r/ffxiv/comments/1swe77k/hey_they_read_my_question_what_job_mentors_do_you/",
+      "raw_score": 597,
+      "published_at": "2026-04-26T17:43:35+00:00",
+      "normalized_score": 33.2,
+      "is_boosted": false
+    },
+    {
+      "source": "Zenn",
+      "title": "探索的テストを進めてくれるAIエージェントを作った",
+      "url": "https://zenn.dev/k_sak/articles/b45763b0cb9434",
+      "raw_score": 13,
+      "published_at": "2026-04-26T00:05:59.945+09:00",
+      "normalized_score": 31.2,
+      "is_boosted": true
+    },
+    {
+      "source": "Qiita",
+      "title": "DuckDB のマクロが便利だったので、テーブルデータ加工について Pandas とユースケース別に比較してみた",
+      "url": "https://qiita.com/atsushi11o7/items/5ad223ebdb5e138534c6?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-25T10:26:22+09:00",
+      "normalized_score": 30,
+      "is_boosted": false
+    },
+    {
+      "source": "Hatebu",
+      "title": "CAMPFIRE 22.5万人情報漏えい — GitHub不正アクセスから何を学ぶか",
+      "url": "https://zenn.dev/awesome_kou/articles/campfire-github-breach-2026",
+      "raw_score": 90,
+      "published_at": "",
+      "normalized_score": 29.9,
+      "is_boosted": false
+    },
+    {
+      "source": "Zenn",
+      "title": "今日のUITraitCollection",
+      "url": "https://zenn.dev/tatsube/articles/92ecf68260d2fb",
+      "raw_score": 12,
+      "published_at": "2026-04-26T20:21:13.925+09:00",
+      "normalized_score": 29.7,
+      "is_boosted": true
+    },
+    {
+      "source": "Zenn",
+      "title": "GitHub のアップデートを、Youtube ショート感覚でダラダラ見られる動画にしてみた",
+      "url": "https://zenn.dev/microsoft/articles/github-update-movie-agent",
+      "raw_score": 22,
+      "published_at": "2026-04-26T05:02:09.591+09:00",
+      "normalized_score": 29.4,
+      "is_boosted": false
+    },
+    {
+      "source": "Zenn",
+      "title": "GeminiやChatGPTで画像生成できる時代に、わざわざローカルで動かす理由",
+      "url": "https://zenn.dev/acntechjp/articles/a7c12b3114f56a",
+      "raw_score": 22,
+      "published_at": "2026-04-24T15:45:41.747+09:00",
+      "normalized_score": 29.4,
+      "is_boosted": false
+    },
+    {
+      "source": "HackerNews",
+      "title": "Butterflies are in decline across North America, a look at the Western Monarch",
+      "url": "https://www.smithsonianmag.com/science-nature/butterflies-are-in-dramatic-decline-across-north-america-a-close-look-at-the-western-monarch-shows-why-180988582/",
+      "raw_score": 99,
+      "published_at": "2026-04-26T21:23:20+00:00",
+      "normalized_score": 28.7,
+      "is_boosted": false
+    },
+    {
+      "source": "Zenn",
+      "title": "生成AIの正しい障害修正がキッカケで、あなたは顧客の信頼を失うかもしれない",
+      "url": "https://zenn.dev/ncdc/articles/48a75cec143dd5",
+      "raw_score": 11,
+      "published_at": "2026-04-26T09:00:05.694+09:00",
+      "normalized_score": 28.2,
+      "is_boosted": true
+    },
+    {
+      "source": "Zenn",
+      "title": "ターミナルで動く開発モニタをRustで作った — Ratatuiで実用TUIを作って見えた5つの設計課題とその解き方",
+      "url": "https://zenn.dev/okamyuji/articles/ratatui-real-world-tui-design-patterns",
+      "raw_score": 21,
+      "published_at": "2026-04-25T07:19:53.974+09:00",
+      "normalized_score": 27.9,
+      "is_boosted": false
+    },
+    {
+      "source": "HackerNews",
+      "title": "The Visible Zorker: Zork 1",
+      "url": "https://eblong.com/infocom/visi/zork1/",
+      "raw_score": 93,
+      "published_at": "2026-04-26T16:42:19+00:00",
+      "normalized_score": 26.5,
+      "is_boosted": false
+    },
+    {
+      "source": "HackerNews",
+      "title": "Show HN: AI memory with biological decay (52% recall)",
+      "url": "https://github.com/sachitrafa/YourMemory",
+      "raw_score": 49,
+      "published_at": "2026-04-26T20:58:31+00:00",
+      "normalized_score": 25.3,
+      "is_boosted": true
+    },
+    {
+      "source": "Qiita",
+      "title": "ADB のカタログにマウントしたIceberg テーブルに自然言語検索（Select AI）してみた",
+      "url": "https://qiita.com/yushibats/items/c65b23462994e8f4c579?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-26T17:29:09+09:00",
+      "normalized_score": 25,
+      "is_boosted": true
+    },
+    {
+      "source": "Zenn",
+      "title": "Claude Code の設定を Codex にどう対応づけるか",
+      "url": "https://zenn.dev/ryok/articles/claude-code-to-codex-settings",
+      "raw_score": 8,
+      "published_at": "2026-04-26T05:11:29.727+09:00",
+      "normalized_score": 23.8,
+      "is_boosted": true
+    },
+    {
+      "source": "Hatebu",
+      "title": "AIコーディングエージェント向けのゲーム制作ベンチマークをしてみたい - ABAの日誌",
+      "url": "https://aba.hatenablog.com/entry/2026/04/25/161542",
+      "raw_score": 25,
+      "published_at": "",
+      "normalized_score": 22.3,
+      "is_boosted": true
+    },
+    {
+      "source": "Reddit: r/ffxiv",
+      "title": "My Dawntrail Black Mage cosplay I took to Fan Fest!",
+      "url": "https://old.reddit.com/r/ffxiv/comments/1swckaq/my_dawntrail_black_mage_cosplay_i_took_to_fan_fest/",
+      "raw_score": 214,
+      "published_at": "2026-04-26T16:42:47+00:00",
+      "normalized_score": 21.2,
+      "is_boosted": true
+    },
+    {
+      "source": "Hatebu",
+      "title": "Microsoft様のお陰で政府情報漏洩している件の最新状況――裁判所の職員情報がダダ漏れ ｜山本一郎（やまもといちろう）",
+      "url": "https://note.com/kirik/n/n404ef819c161",
+      "raw_score": 62,
+      "published_at": "",
+      "normalized_score": 20.1,
+      "is_boosted": false
+    },
+    {
+      "source": "Qiita",
+      "title": "競技プログラミング初心者がハマりやすいミスと対策のまとめ",
+      "url": "https://qiita.com/P-SiZK/items/3a817f66e391354e75f8?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-25T18:06:22+09:00",
+      "normalized_score": 20,
+      "is_boosted": false
+    },
+    {
+      "source": "Zenn",
+      "title": "LLMアプリケーションにおける設計Principal - LLMのCAP定理",
+      "url": "https://zenn.dev/hsaki/articles/llm-cap-theorem",
+      "raw_score": 5,
+      "published_at": "2026-04-26T17:00:14.373+09:00",
+      "normalized_score": 19.4,
+      "is_boosted": true
+    },
+    {
+      "source": "Reddit: r/ObsidianMD",
+      "title": "How can I treat Obsidian as a \"Second Brain\"?",
+      "url": "https://old.reddit.com/r/ObsidianMD/comments/1sw616g/how_can_i_treat_obsidian_as_a_second_brain/",
+      "raw_score": 14,
+      "published_at": "2026-04-26T12:18:24+00:00",
+      "normalized_score": 19.2,
+      "is_boosted": true
+    },
+    {
+      "source": "Zenn",
+      "title": "agents-cliの中身を見てみよう",
+      "url": "https://zenn.dev/makocchan/articles/whats_agents_cli",
+      "raw_score": 15,
+      "published_at": "2026-04-25T09:19:15.730+09:00",
+      "normalized_score": 19.1,
+      "is_boosted": false
+    },
+    {
+      "source": "Zenn",
+      "title": "2026年にCGIでWebアプリを作る",
+      "url": "https://zenn.dev/alarky/articles/cgi-modern-web-app-2026",
+      "raw_score": 15,
+      "published_at": "2026-04-26T03:32:08.052+09:00",
+      "normalized_score": 19.1,
+      "is_boosted": false
+    },
+    {
+      "source": "Reddit: r/ObsidianMD",
+      "title": "Gonna start using obsidian and for \"fun\", which plugins would you recommend?",
+      "url": "https://old.reddit.com/r/ObsidianMD/comments/1swi8jq/gonna_start_using_obsidian_and_for_fun_which/",
+      "raw_score": 13,
+      "published_at": "2026-04-26T20:12:59+00:00",
+      "normalized_score": 18.9,
+      "is_boosted": true
+    },
+    {
+      "source": "HackerNews",
+      "title": "Magic: The Gathering took me from N2 to Japanese fluency",
+      "url": "https://www.tokyodev.com/articles/how-magic-the-gathering-took-me-from-n2-to-japanese-fluency",
+      "raw_score": 72,
+      "published_at": "2026-04-24T00:03:20+00:00",
+      "normalized_score": 18.8,
+      "is_boosted": false
+    },
+    {
+      "source": "Reddit: r/ObsidianMD",
+      "title": "Does anyone using Obsidian as a second brain, project and task management tool with only the default features (without having any add-on installed) ?",
+      "url": "https://old.reddit.com/r/ObsidianMD/comments/1swavnd/does_anyone_using_obsidian_as_a_second_brain/",
+      "raw_score": 10,
+      "published_at": "2026-04-26T15:40:25+00:00",
+      "normalized_score": 18.0,
+      "is_boosted": true
+    },
+    {
+      "source": "Zenn",
+      "title": "最近使っている GitHub Copilot CLI + .NET 向けのカスタムエージェントとスキル",
+      "url": "https://zenn.dev/microsoft/articles/github-copilot-dotnet-project",
+      "raw_score": 14,
+      "published_at": "2026-04-25T19:45:03.807+09:00",
+      "normalized_score": 17.6,
+      "is_boosted": false
+    },
+    {
+      "source": "Hatebu",
+      "title": "デジタル庁、ガバメントAI「源内」をOSSとして公開。18万人の政府職員による大規模実証の一環　商用利用も可能なライセンス",
+      "url": "https://internet.watch.impress.co.jp/docs/news/2104549.html",
+      "raw_score": 11,
+      "published_at": "",
+      "normalized_score": 17.4,
+      "is_boosted": true
+    },
+    {
+      "source": "Hatebu",
+      "title": "「TypeScript 7.0」ベータ版が公開。TypeScriptコンパイラなどをGo言語に移植、コンパイルを10倍速に",
+      "url": "https://www.publickey1.jp/blog/26/typescript_70typescriptgo10.html",
+      "raw_score": 8,
+      "published_at": "",
+      "normalized_score": 16.4,
+      "is_boosted": true
+    },
+    {
+      "source": "Reddit: r/ObsidianMD",
+      "title": "Obsidian As A Business Brain",
+      "url": "https://old.reddit.com/r/ObsidianMD/comments/1swe6wo/obsidian_as_a_business_brain/",
+      "raw_score": 4,
+      "published_at": "2026-04-26T17:43:16+00:00",
+      "normalized_score": 16.2,
+      "is_boosted": true
+    },
+    {
+      "source": "Reddit: r/ffxiv",
+      "title": "what if the new tank inspired by another SE game with Norse Mythology",
+      "url": "https://old.reddit.com/r/ffxiv/comments/1swix4b/what_if_the_new_tank_inspired_by_another_se_game/",
+      "raw_score": 354,
+      "published_at": "2026-04-26T20:39:20+00:00",
+      "normalized_score": 16.1,
+      "is_boosted": false
+    },
+    {
+      "source": "Hatebu",
+      "title": "AIと、コードを見ながらやりとりする。ローカルレビューを回すOSS「difit」 - Findy Media",
+      "url": "https://findy-code.io/media/articles/aisaji-yoshiko_pg",
+      "raw_score": 5,
+      "published_at": "",
+      "normalized_score": 15.3,
+      "is_boosted": true
+    },
+    {
+      "source": "Reddit: r/ObsidianMD",
+      "title": "Struggling to Set Up Obsidian as a CS Student — Need Guidance",
+      "url": "https://old.reddit.com/r/ObsidianMD/comments/1swnxbu/struggling_to_set_up_obsidian_as_a_cs_student/",
+      "raw_score": 1,
+      "published_at": "2026-04-27T00:09:33+00:00",
+      "normalized_score": 15.3,
+      "is_boosted": true
+    },
+    {
+      "source": "Zenn",
+      "title": "LINEをAIエージェントの入口にする現実解",
+      "url": "https://zenn.dev/peintangos/articles/b024c86e672191",
+      "raw_score": 2,
+      "published_at": "2026-04-26T20:12:50.578+09:00",
+      "normalized_score": 15.0,
+      "is_boosted": true
+    },
+    {
+      "source": "Qiita",
+      "title": "2025年スペイン大停電を読み解く。日本のVPPはどんな教訓を得られるのか？",
+      "url": "https://qiita.com/sc-muro/items/1e5b8f23ec912a5a9b73?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-24T12:08:22+09:00",
+      "normalized_score": 15,
+      "is_boosted": false
+    },
+    {
+      "source": "Hatebu",
+      "title": "OpenAIとGoogle、東大理3「首席合格」数学は満点　得意科目に違い - 日本経済新聞",
+      "url": "https://www.nikkei.com/article/DGXZQOUC307OD0Q6A330C2000000/",
+      "raw_score": 4,
+      "published_at": "",
+      "normalized_score": 15.0,
+      "is_boosted": true
+    },
+    {
+      "source": "Reddit: r/ObsidianMD",
+      "title": "I built a small plugin for bidirectional relations in YAML frontmatter",
+      "url": "https://old.reddit.com/r/ObsidianMD/comments/1swcxwq/i_built_a_small_plugin_for_bidirectional/",
+      "raw_score": 50,
+      "published_at": "2026-04-26T16:56:59+00:00",
+      "normalized_score": 15.0,
+      "is_boosted": false
+    },
+    {
+      "source": "Reddit: r/ObsidianMD",
+      "title": "New in obsidian need a some advice to improve this",
+      "url": "https://old.reddit.com/r/ObsidianMD/comments/1swmv54/new_in_obsidian_need_a_some_advice_to_improve_this/",
+      "raw_score": 0,
+      "published_at": "2026-04-26T23:21:51+00:00",
+      "normalized_score": 15.0,
+      "is_boosted": true
+    },
+    {
+      "source": "Reddit: r/ObsidianMD",
+      "title": "I built a plugin to track my anime, Movies and TvShows; WatchLog",
+      "url": "https://old.reddit.com/r/ObsidianMD/comments/1swfoy5/i_built_a_plugin_to_track_my_anime_movies_and/",
+      "raw_score": 49,
+      "published_at": "2026-04-26T18:38:13+00:00",
+      "normalized_score": 14.7,
+      "is_boosted": false
+    },
+    {
+      "source": "HackerNews",
+      "title": "Two Athletes Break Sub-2-HR Marathon in Adizero Adios Pro Evo 3",
+      "url": "https://news.adidas.com/running/two-adidas-athletes-sabastian-sawe-and-yomif-kejelcha-break-the-sub-2-hour-marathon-barrier-in-the-r/s/d4be4eac-a3b8-47d5-835f-9cbd685638ca",
+      "raw_score": 58,
+      "published_at": "2026-04-26T21:04:39+00:00",
+      "normalized_score": 13.6,
+      "is_boosted": false
+    },
+    {
+      "source": "Zenn",
+      "title": "Matz の Ruby AOT コンパイラ Spinel を試してみました",
+      "url": "https://zenn.dev/geeknees/articles/edc3cb36ea251c",
+      "raw_score": 11,
+      "published_at": "2026-04-26T15:34:35.354+09:00",
+      "normalized_score": 13.2,
+      "is_boosted": false
+    },
+    {
+      "source": "Reddit: r/ffxiv",
+      "title": "Limsa Cat",
+      "url": "https://old.reddit.com/r/ffxiv/comments/1swcepe/limsa_cat/",
+      "raw_score": 278,
+      "published_at": "2026-04-26T16:37:05+00:00",
+      "normalized_score": 10.7,
+      "is_boosted": false
+    },
+    {
+      "source": "Reddit: r/ObsidianMD",
+      "title": "Handwritten notes app",
+      "url": "https://old.reddit.com/r/ObsidianMD/comments/1sw6d2m/handwritten_notes_app/",
+      "raw_score": 31,
+      "published_at": "2026-04-26T12:34:20+00:00",
+      "normalized_score": 9.3,
+      "is_boosted": false
+    },
+    {
+      "source": "Hatebu",
+      "title": "スマホの「残価設定」にメス？　総務省がルール統一を検討も、Appleは「不当な扱い」と猛反発",
+      "url": "https://www.itmedia.co.jp/mobile/articles/2604/25/news027.html",
+      "raw_score": 30,
+      "published_at": "",
+      "normalized_score": 9.0,
+      "is_boosted": false
+    },
+    {
+      "source": "Zenn",
+      "title": "「ミドルウェア」って言葉、多すぎない？エンジニアが頭の中を整理してみた",
+      "url": "https://zenn.dev/oz006/articles/9cfa4377c3e189",
+      "raw_score": 8,
+      "published_at": "2026-04-25T21:44:51.921+09:00",
+      "normalized_score": 8.8,
+      "is_boosted": false
+    },
+    {
+      "source": "Hatebu",
+      "title": "TikTok化が我らを解放する » p2ptk[.]org",
+      "url": "https://p2ptk.org/monopoly/5588",
+      "raw_score": 29,
+      "published_at": "",
+      "normalized_score": 8.7,
+      "is_boosted": false
+    },
+    {
+      "source": "HackerNews",
+      "title": "XOXO Festival Archive",
+      "url": "https://xoxofest.com/",
+      "raw_score": 38,
+      "published_at": "2026-04-24T02:40:39+00:00",
+      "normalized_score": 6.2,
+      "is_boosted": false
+    },
+    {
+      "source": "HackerNews",
+      "title": "Box to Save Memory in Rust",
+      "url": "https://dystroy.org/blog/box-to-save-memory/",
+      "raw_score": 35,
+      "published_at": "2026-04-23T17:02:24+00:00",
+      "normalized_score": 5.1,
+      "is_boosted": false
+    },
+    {
+      "source": "Qiita",
+      "title": "最高効率でインディーズゲームを開発するためにUnityフレームワークを作った話",
+      "url": "https://qiita.com/archeleeds/items/8482fa4b122a1e016634?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "raw_score": 0,
+      "published_at": "2026-04-25T14:09:49+09:00",
+      "normalized_score": 5,
+      "is_boosted": false
+    },
+    {
+      "source": "Hatebu",
+      "title": "Docker Sandboxes | コーディングエージェントのためのSandboxes | Docker",
+      "url": "https://www.docker.com/ja-jp/products/docker-sandboxes/",
+      "raw_score": 18,
+      "published_at": "",
+      "normalized_score": 4.9,
+      "is_boosted": false
+    },
+    {
+      "source": "Hatebu",
+      "title": "Firefox Has Quietly Integrated Brave's Adblock Engine",
+      "url": "https://itsfoss.com/news/firefox-ships-brave-adblock-engine/",
+      "raw_score": 15,
+      "published_at": "",
+      "normalized_score": 3.8,
+      "is_boosted": false
+    },
+    {
+      "source": "HackerNews",
+      "title": "MoQ Boy",
+      "url": "https://moq.dev/blog/moq-boy/",
+      "raw_score": 28,
+      "published_at": "2026-04-26T20:40:50+00:00",
+      "normalized_score": 2.6,
+      "is_boosted": false
+    },
+    {
+      "source": "Hatebu",
+      "title": "技術ニュースを毎朝スマホで流し読みしたい、だから自分専用サイトを開発した話",
+      "url": "https://ascii.jp/elem/000/004/397/4397047/",
+      "raw_score": 11,
+      "published_at": "",
+      "normalized_score": 2.4,
+      "is_boosted": false
+    },
+    {
+      "source": "Reddit: r/ObsidianMD",
+      "title": "Is there no cleaner way to add images/attachments to notes without them also appearing as raw files?",
+      "url": "https://old.reddit.com/r/ObsidianMD/comments/1swizp5/is_there_no_cleaner_way_to_add_imagesattachments/",
+      "raw_score": 5,
+      "published_at": "2026-04-26T20:42:03+00:00",
+      "normalized_score": 1.5,
+      "is_boosted": false
+    },
+    {
+      "source": "Reddit: r/ObsidianMD",
+      "title": "Look for a grammar/spelling checker",
+      "url": "https://old.reddit.com/r/ObsidianMD/comments/1swifbp/look_for_a_grammarspelling_checker/",
+      "raw_score": 4,
+      "published_at": "2026-04-26T20:20:10+00:00",
+      "normalized_score": 1.2,
+      "is_boosted": false
+    },
+    {
+      "source": "Hatebu",
+      "title": "GitHub - open-telemetry/opentelemetry-php-distro",
+      "url": "https://github.com/open-telemetry/opentelemetry-php-distro",
+      "raw_score": 5,
+      "published_at": "",
+      "normalized_score": 0.3,
+      "is_boosted": false
+    },
+    {
+      "source": "HackerNews",
+      "title": "Running Bare-Metal Rust Alongside ESP-IDF on the ESP32-S3's Second Core",
+      "url": "https://tingouw.com/blog/embedded/esp32/run_rust_on_app_core",
+      "raw_score": 21,
+      "published_at": "2026-04-24T04:57:16+00:00",
+      "normalized_score": 0.0,
+      "is_boosted": false
+    },
+    {
+      "source": "Reddit: r/ffxiv",
+      "title": "Hi from Rave Emet!",
+      "url": "https://old.reddit.com/r/ffxiv/comments/1swjlg2/hi_from_rave_emet/",
+      "raw_score": 126,
+      "published_at": "2026-04-26T21:05:16+00:00",
+      "normalized_score": 0.0,
+      "is_boosted": false
+    }
+  ]
+}
