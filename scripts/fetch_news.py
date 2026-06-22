@@ -108,7 +108,8 @@ def fetch_hatebu():
     
     ns = {
         "rss": "http://purl.org/rss/1.0/",
-        "hatena": "http://www.hatena.ne.jp/info/xmlns#"
+        "hatena": "http://www.hatena.ne.jp/info/xmlns#",
+        "dc": "http://purl.org/dc/elements/1.1/"
     }
     results = []
     for item in root.findall(".//rss:item", ns)[:20]:
@@ -116,12 +117,18 @@ def fetch_hatebu():
         url = item.find("rss:link", ns).text
         bookmark_count = int(item.find("hatena:bookmarkcount", ns).text or 0)
         
+        # Dublin Core (dc:date) から日付を取得
+        published_at = ""
+        dc_date = item.find("dc:date", ns)
+        if dc_date is not None and dc_date.text:
+            published_at = dc_date.text
+        
         results.append({
             "source": "Hatebu",
             "title": title,
             "url": url,
             "raw_score": bookmark_count,
-            "published_at": ""
+            "published_at": published_at
         })
     return results
 

@@ -20,6 +20,7 @@ function App() {
   const [data, setData] = useState<DataJson | null>(null);
   const [activeTab, setActiveTab] = useState<string>('Top');
   const [savedUrls, setSavedUrls] = useState<Set<string>>(new Set());
+  const [recentOnly, setRecentOnly] = useState<boolean>(false);
 
   useEffect(() => {
     fetch('/data.json')
@@ -56,9 +57,26 @@ function App() {
     return <div className="loading">読み込み中...</div>;
   }
 
+  // Filter by recent (24 hours)
+  const isRecent = (isoString: string) => {
+    if (!isoString) return false;
+    try {
+      const d = new Date(isoString);
+      if (isNaN(d.getTime())) return false;
+      const diffHours = (new Date().getTime() - d.getTime()) / (1000 * 60 * 60);
+      return diffHours >= 0 && diffHours <= 24;
+    } catch {
+      return false;
+    }
+  };
+
+  // Filter articles list
+  const filteredArticles = recentOnly 
+    ? data.articles.filter((a: Article) => isRecent(a.published_at))
+    : data.articles;
+
   // Extract Top 10 for Top tab
-  const allArticles = data.articles;
-  const top10 = [...allArticles].sort((a, b) => b.normalized_score - a.normalized_score).slice(0, 10);
+  const top10 = [...filteredArticles].sort((a, b) => b.normalized_score - a.normalized_score).slice(0, 10);
   
   // Categorize
   const getTabArticles = () => {
@@ -66,22 +84,34 @@ function App() {
       case 'Top':
         return top10;
       case 'あとで読む':
-        return allArticles.filter((a: Article) => savedUrls.has(a.url));
+        return filteredArticles.filter((a: Article) => savedUrls.has(a.url));
       default:
         // Ex: "Zenn", "Reddit: r/ObsidianMD"
-        return allArticles.filter((a: Article) => a.source.includes(activeTab));
+        return filteredArticles.filter((a: Article) => a.source.includes(activeTab));
     }
   };
 
   const tabs = ['Top', 'Zenn', 'Qiita', 'Hatebu', 'HackerNews', 'ObsidianMD', 'ffxiv', 'あとで読む'];
 
   const formatDate = (isoString: string) => {
-    if (!isoString) return '';
+    if (!isoString) return '不明';
     try {
       const d = new Date(isoString);
-      return `${d.getMonth()+1}/${d.getDate()} ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
+      if (isNaN(d.getTime())) return '不明';
+      const now = new Date();
+      const diffMs = now.getTime() - d.getTime();
+      const diffMins = Math.floor(diffMs / (1000 * 60));
+      const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
+
+      if (diffMins < 60 && diffMins >= 0) {
+        return `${diffMins}分前`;
+      } else if (diffHours < 24 && diffHours >= 0) {
+        return `${diffHours}時間前`;
+      }
+
+      return `${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()} ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
     } catch {
-      return '';
+      return '不明';
     }
   };
 
@@ -93,6 +123,17 @@ function App() {
           Latest Update: {new Date(data.generated_at).toLocaleString()}
         </div>
       </header>
+
+      <div className="filter-controls">
+        <label className="toggle-container">
+          <input 
+            type="checkbox" 
+            checked={recentOnly} 
+            onChange={(e) => setRecentOnly(e.target.checked)}
+          />
+          <span className="toggle-label">直近24時間以内の記事のみ表示</span>
+        </label>
+      </div>
 
       <nav className="tab-navigation">
         {tabs.map(tab => (
