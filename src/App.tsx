@@ -54,7 +54,7 @@ function App() {
   const isSaved = (url: string) => savedUrls.has(url);
 
   if (!data) {
-    return <div className="loading">読み込み中...</div>;
+    return <div className="loading">NOW LOADING...</div>;
   }
 
   // Filter by recent (24 hours)
@@ -71,33 +71,38 @@ function App() {
   };
 
   // Filter articles list
-  const filteredArticles = recentOnly 
+  const filteredArticles = recentOnly
     ? data.articles.filter((a: Article) => isRecent(a.published_at))
     : data.articles;
 
   // Extract Top 10 for Top tab
   const top10 = [...filteredArticles].sort((a, b) => b.normalized_score - a.normalized_score).slice(0, 10);
-  
+
   // Categorize
   const getTabArticles = () => {
-    switch(activeTab) {
+    switch (activeTab) {
       case 'Top':
         return top10;
       case 'あとで読む':
         return filteredArticles.filter((a: Article) => savedUrls.has(a.url));
       default:
-        // Ex: "Zenn", "Reddit: r/ObsidianMD"
         return filteredArticles.filter((a: Article) => a.source.includes(activeTab));
     }
   };
 
   const tabs = ['Top', 'Zenn', 'Qiita', 'Hatebu', 'HackerNews', 'ObsidianMD', 'ffxiv', 'あとで読む'];
 
-  const formatDate = (isoString: string) => {
-    if (!isoString) return '不明';
+  /**
+   * 日付をカード右上バッジ用にフォーマット
+   * - 1時間未満: "XX分前"
+   * - 24時間未満: "XX時間前"
+   * - それ以上:   "YYYY/MM/DD HH:MM"
+   */
+  const formatDateBadge = (isoString: string): string => {
+    if (!isoString) return '日付不明';
     try {
       const d = new Date(isoString);
-      if (isNaN(d.getTime())) return '不明';
+      if (isNaN(d.getTime())) return '日付不明';
       const now = new Date();
       const diffMs = now.getTime() - d.getTime();
       const diffMins = Math.floor(diffMs / (1000 * 60));
@@ -109,36 +114,56 @@ function App() {
         return `${diffHours}時間前`;
       }
 
-      return `${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()} ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
+      const y = d.getFullYear();
+      const mo = String(d.getMonth() + 1).padStart(2, '0');
+      const dd = String(d.getDate()).padStart(2, '0');
+      const hh = String(d.getHours()).padStart(2, '0');
+      const mm = String(d.getMinutes()).padStart(2, '0');
+      return `${y}/${mo}/${dd} ${hh}:${mm}`;
     } catch {
-      return '不明';
+      return '日付不明';
     }
   };
 
+  const generatedAt = (() => {
+    try {
+      const d = new Date(data.generated_at);
+      return d.toLocaleString('ja-JP');
+    } catch {
+      return data.generated_at;
+    }
+  })();
+
   return (
     <div className="app-container">
+      {/* ===== HEADER ===== */}
       <header className="app-header">
-        <h1>Tech News Digest</h1>
-        <div className="meta-info">
-          Latest Update: {new Date(data.generated_at).toLocaleString()}
+        <h1>★ TECH NEWS DIGEST ★</h1>
+        <div className="header-subtitle">- DAILY QUEST BOARD -</div>
+        <div className="meta-info">LAST UPDATE: {generatedAt}</div>
+        <div className="header-corners">
+          <span>◆</span>
+          <span>◆</span>
         </div>
       </header>
 
+      {/* ===== FILTER ===== */}
       <div className="filter-controls">
         <label className="toggle-container">
-          <input 
-            type="checkbox" 
-            checked={recentOnly} 
+          <input
+            type="checkbox"
+            checked={recentOnly}
             onChange={(e) => setRecentOnly(e.target.checked)}
           />
-          <span className="toggle-label">直近24時間以内の記事のみ表示</span>
+          <span>直近24時間のみ</span>
         </label>
       </div>
 
+      {/* ===== TABS ===== */}
       <nav className="tab-navigation">
         {tabs.map(tab => (
-          <button 
-            key={tab} 
+          <button
+            key={tab}
             className={`tab-btn ${activeTab === tab ? 'active' : ''}`}
             onClick={() => setActiveTab(tab)}
           >
@@ -147,29 +172,40 @@ function App() {
         ))}
       </nav>
 
+      {/* ===== ARTICLE LIST ===== */}
       <main className="article-list">
         {getTabArticles().length === 0 ? (
-          <div className="empty-state">記事がありません。</div>
+          <div className="empty-state">記事がありません</div>
         ) : (
           getTabArticles().map((article, idx) => (
-            <article key={idx} className={`article-card ${article.is_boosted ? 'boosted' : ''}`}>
+            <article
+              key={idx}
+              className={`article-card ${article.is_boosted ? 'boosted' : ''}`}
+              style={{ animationDelay: `${idx * 0.04}s` }}
+            >
+              {/* Card Header: source / boost / score / DATE */}
               <div className="card-header">
                 <span className={`source-badge ${article.source.split(':')[0].toLowerCase()}`}>
                   {article.source}
                 </span>
-                {article.is_boosted && <span className="boost-badge">★ Boost</span>}
-                <span className="score-badge">Score: {article.normalized_score}</span>
+                {article.is_boosted && <span className="boost-badge">★ BOOST</span>}
+                <span className="score-badge">Lv.{Math.round(article.normalized_score)}</span>
+                {/* 日付バッジ（右上） */}
+                <span className="date-badge">{formatDateBadge(article.published_at)}</span>
               </div>
+
+              {/* Title */}
               <a href={article.url} target="_blank" rel="noopener noreferrer" className="article-title">
                 {article.title}
               </a>
+
+              {/* Footer */}
               <div className="card-footer">
-                <span className="date">{formatDate(article.published_at)}</span>
-                <button 
+                <button
                   className={`save-btn ${isSaved(article.url) ? 'saved' : ''}`}
                   onClick={() => toggleSave(article)}
                 >
-                  {isSaved(article.url) ? '保存済み' : 'あとで読む'}
+                  {isSaved(article.url) ? '✓ 保存済み' : '► あとで読む'}
                 </button>
               </div>
             </article>
@@ -177,7 +213,7 @@ function App() {
         )}
       </main>
     </div>
-  )
+  );
 }
 
 export default App
