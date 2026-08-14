@@ -1,12 +1,10 @@
 name: Update News and Deploy to GitHub Pages
 
 on:
-  schedule:
-    - cron: '0 */6 * * *' # 6時間ごとに実行
-  workflow_dispatch: # 手動実行も可能
-  push:
-    branches:
-      - master # masterブランチへのプッシュ時にも実行
+  # Google APIの課金体系変更に伴い定期実行を一時停止
+  # schedule:
+  #   - cron: '0 */6 * * *' # 6時間ごとに実行
+  workflow_dispatch: # 手動実行のみ可能
 
 permissions:
   contents: write
