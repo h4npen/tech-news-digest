@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日刊パーソナルタイムズ - 2026年09月11日</title>
+  <style>
+    :root {
+      --primary-sunset: #2c1a1d;
+      --accent-sunset: #d9532f;
+      --bg-warm: #18191c;
+      --card-bg: #23252b;
+      --text-main: #e2e8f0;
+      --text-muted: #94a3b8;
+      --border-color: #334155;
+      --impact-bg: #3d241e;
+      --impact-border: #f97316;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+      background-color: #0f1117;
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 20px 10px;
+    }
+
+    .top-bar {
+      max-width: 980px;
+      margin: 0 auto 12px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    .top-bar a {
+      color: #f1f5f9;
+      text-decoration: none;
+      font-weight: bold;
+      background: #1e2129;
+      padding: 6px 12px;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .top-bar a:hover {
+      background: #334155;
+      color: var(--accent-sunset);
+    }
+
+    .newspaper-container {
+      max-width: 980px;
+      margin: 0 auto;
+      background: var(--bg-warm);
+      box-shadow: 0 4px 25px rgba(0,0,0,0.5);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    /* ヘッダー */
+    .newspaper-header {
+      background: linear-gradient(135deg, #1c1017 0%, #381a20 100%);
+      color: #ffffff;
+      padding: 26px 32px 20px 32px;
+      border-bottom: 4px solid var(--accent-sunset);
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+    }
+
+    .newspaper-name {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", "游明朝", serif;
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .edition-badge {
+      background: var(--accent-sunset);
+      color: #fff;
+      font-size: 13px;
+      font-family: sans-serif;
+      padding: 3px 8px;
+      border-radius: 4px;
+      letter-spacing: 1px;
+    }
+
+    .header-meta {
+      text-align: right;
+      font-size: 12px;
+      color: #cbd5e1;
+    }
+
+    .header-quote {
+      font-size: 13px;
+      color: #fdba74;
+      font-style: italic;
+    }
+
+    /* ナビゲーションバー */
+    .nav-bar {
+      background: #1e2129;
+      border-bottom: 1px solid #334155;
+      padding: 10px 24px;
+      display: flex;
+      gap: 16px;
+      font-weight: bold;
+      font-size: 13px;
+      overflow-x: auto;
+    }
+
+    .nav-item {
+      color: #f1f5f9;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      white-space: nowrap;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .nav-item:hover {
+      background: #334155;
+      color: var(--accent-sunset);
+    }
+
+    /* メインコンテンツ */
+    .main-body {
+      padding: 24px;
+    }
+
+    /* 一面トップニュース */
+    .headline-section {
+      background: #251c20;
+      border: 1px solid var(--accent-sunset);
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 32px;
+      position: relative;
+    }
+
+    .headline-tag {
+      display: inline-block;
+      background: var(--accent-sunset);
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin-bottom: 8px;
+    }
+
+    .headline-title {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .headline-title a {
+      color: #f8fafc;
+      text-decoration: none;
+    }
+    .headline-title a:hover {
+      color: var(--accent-sunset);
+      text-decoration: underline;
+    }
+
+    .headline-impact {
+      background: var(--impact-bg);
+      border-left: 4px solid var(--impact-border);
+      padding: 10px 14px;
+      margin-top: 12px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #fed7aa;
+    }
+
+    /* カテゴリセクション */
+    .category-section {
+      margin-bottom: 36px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--accent-sunset);
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-size: 18px;
+      font-weight: 800;
+      color: #f8fafc;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-count {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* 記事グリッド */
+    .article-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .article-card {
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 14px;
+      background: var(--card-bg);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+
+    .article-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      border-color: #64748b;
+    }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+      font-size: 12px;
+    }
+
+    .card-source {
+      color: #fb923c;
+      font-weight: bold;
+    }
+
+    .card-score {
+      background: #334155;
+      color: #cbd5e1;
+      padding: 1px 6px;
+      border-radius: 3px;
+      font-size: 11px;
+    }
+
+    .card-title {
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+
+    .card-title a {
+      color: #f1f5f9;
+      text-decoration: none;
+    }
+
+    .card-title a:hover {
+      color: #fb923c;
+      text-decoration: underline;
+    }
+
+    .card-summary {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .card-impact {
+      background: var(--impact-bg);
+      border-left: 3px solid var(--impact-border);
+      padding: 6px 10px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #fed7aa;
+      border-radius: 0 4px 4px 0;
+    }
+
+    /* フッター */
+    .newspaper-footer {
+      background: #14161c;
+      border-top: 1px solid var(--border-color);
+      padding: 18px 24px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <a href="./">🏠 TECH NEWS DIGEST ポータルへ戻る</a>
+    <a href="morning.html">☀️ 今朝の朝刊を読む</a>
+  </div>
+
+  <div class="newspaper-container">
+    <!-- ヘッダー -->
+    <header class="newspaper-header">
+      <div class="header-top">
+        <h1 class="newspaper-name">
+          日刊パーソナルタイムズ
+          <span class="edition-badge">夕刊</span>
+        </h1>
+        <div class="header-meta">
+          <div><strong>第 20260911 号</strong></div>
+          <div>2026年09月11日 発行</div>
+        </div>
+      </div>
+      <div class="header-quote">
+        「今日一日の重要トピックと、夜のリラックス＆深掘りインサイト」
+      </div>
+    </header>
+
+    <!-- ナビゲーション -->
+    <nav class="nav-bar">
+      
+      <a href="#cat-ai" class="nav-item">
+        <span>🤖</span> AI・テクノロジー
+      </a>
+      
+      <a href="#cat-water" class="nav-item">
+        <span>💧</span> 上下水道・インフラ
+      </a>
+      
+      <a href="#cat-ff14" class="nav-item">
+        <span>⚔️</span> FF14 (ファイナルファンタジーXIV)
+      </a>
+      
+      <a href="#cat-game" class="nav-item">
+        <span>🎮</span> ゲーム全般・エンタメ
+      </a>
+      
+    </nav>
+
+    <!-- 本文 -->
+    <main class="main-body">
+
+      <!-- 一面トップ注目ニュース -->
+      
+      <section class="headline-section">
+        <span class="headline-tag">★ 今夕の注目ハイライト</span>
+        <h2 class="headline-title">
+          <a href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noopener noreferrer">
+            Countering misuse of AI: September 2026 / Anthropic
+          </a>
+        </h2>
+        <div class="card-meta">
+          <span class="card-source">はてなブックマーク (AI・テクノロジー)</span>
+          <span class="card-score">注目スコア: 25.0pt</span>
+        </div>
+        <p class="card-summary">Over the past eight months, our Threat Intelligence team identified and disrupted operations in which threat actors tried to use Claude for malicious activity. In this report, we share case studies from those operations and describe how malicious use</p>
+        <div class="headline-impact">
+          → 最新モデルの性能検証と既存プロンプトの改修検討
+        </div>
+      </section>
+      
+
+      <!-- 各カテゴリニュース -->
+      
+      <section class="category-section" id="cat-ai">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span>🤖</span> AI・テクノロジー
+          </h2>
+          <span class="section-count">厳選 5 本</span>
+        </div>
+
+        <div class="article-grid">
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">はてなブックマーク (AI・テクノロジー)</span>
+              <span class="card-score">スコア: 25.0pt</span>
+              
+              <span style="color: #fb923c; font-weight: bold; font-size: 11px;">🔖 30 users</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noopener noreferrer">
+                Countering misuse of AI: September 2026 / Anthropic
+              </a>
+            </h3>
+            <p class="card-summary">Over the past eight months, our Threat Intelligence team identified and disrupted operations in which threat actors tried to use Claude for malicious activity. In this report, we share case studies from those operations and describe how malicious use</p>
+            <div class="card-impact">
+              → 最新モデルの性能検証と既存プロンプトの改修検討
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">はてなブックマーク (AI・テクノロジー)</span>
+              <span class="card-score">スコア: 24.0pt</span>
+              
+              <span style="color: #fb923c; font-weight: bold; font-size: 11px;">🔖 125 users</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="https://togetter.com/li/2744037" target="_blank" rel="noopener noreferrer">
+                「Ctrl+cするな！パソコンがバグる！だから右クリックからコピーを選んでコピペしろ！」という完全に狂っている上司の前で、無言でCtrl+cし続けたら退散した
+              </a>
+            </h3>
+            <p class="card-summary">豊田さこつ @abaransyu 弊社、常識では考えられないこと(teamsは使うなメモは紙にかけ、iPadは使うなデジカメで写真を撮れ、メールの転送機能を知らないのでパソコンのメール画面をスマホで写真撮影して共有させる)をする上司がウヨウヨいて、その度にふざけて言ってるのかと思って「それは流石に面白いw」的な反応して...</p>
+            <div class="card-impact">
+              → 業務効率化ツールとしての実務適用可能性を調査
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">はてなブックマーク (AI・テクノロジー)</span>
+              <span class="card-score">スコア: 21.0pt</span>
+              
+              <span style="color: #fb923c; font-weight: bold; font-size: 11px;">🔖 14 users</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="https://shopify.engineering/back-to-native" target="_blank" rel="noopener noreferrer">
+                Native is now the future of mobile at Shopify (2026) - Shopify
+              </a>
+            </h3>
+            <p class="card-summary">Native is now the future of mobile at ShopifyCoding agents changed what it costs to build mobile apps twice. Here’s why Shopify is moving from React Native back to Swift and Kotlin. We decided to go all-in on React Native back in 2020, and that bet h</p>
+            <div class="card-impact">
+              → コーディング・定常業務へのエージェント導入検証が急務
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">ITmedia AI+</span>
+              <span class="card-score">スコア: 18.2pt</span>
+              
+              <span style="color: #fb923c; font-weight: bold; font-size: 11px;">🔖 2 users</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="https://www.itmedia.co.jp/news/article/2609/11/2000001399/" target="_blank" rel="noopener noreferrer">
+                Windows用「Gemini」アプリ提供開始　画面上に重ねて作業を中断せず利用可能に
+              </a>
+            </h3>
+            <p class="card-summary">Googleは、Windows向けデスクトップアプリ「Gemini app for Windows」を公開した。Windows 10および11に対応し、UIは日本語をサポートする。［Alt］＋［Space］で作業画面上に重ねて呼び出せるほか、自律型AIエージェント「Gemini Spark」や画像・動画生成もPC上で利用できる（一部は有料プランが必要）。Mac版は4月にリリース済み。</p>
+            <div class="card-impact">
+              → 最新モデルの性能検証と既存プロンプトの改修検討
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">ITmedia AI+</span>
+              <span class="card-score">スコア: 18.2pt</span>
+              
+              <span style="color: #fb923c; font-weight: bold; font-size: 11px;">🔖 2 users</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="https://www.itmedia.co.jp/news/article/2609/11/2000001396/" target="_blank" rel="noopener noreferrer">
+                Amazon、OpenAIと広告で提携　Amazon DSPの広告主が「ChatGPT」内に広告出稿可能に
+              </a>
+            </h3>
+            <p class="card-summary">Amazon Adsは、OpenAIと提携して「ChatGPT」上での広告配信に対応すると発表した。広告主はAmazon DSPを通じ、会話画面下にテキストや画像広告を出稿できるようになる。まずは米国の成人無料プラン向けパイロットとして開始し、配信面の制御はOpenAIのシステムが担う。</p>
+            <div class="card-impact">
+              → 最新モデルの性能検証と既存プロンプトの改修検討
+            </div>
+          </article>
+          
+        </div>
+      </section>
+      
+      <section class="category-section" id="cat-water">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span>💧</span> 上下水道・インフラ
+          </h2>
+          <span class="section-count">厳選 5 本</span>
+        </div>
+
+        <div class="article-grid">
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">はてなブックマーク (水道・インフラ)</span>
+              <span class="card-score">スコア: 24.0pt</span>
+              
+              <span style="color: #fb923c; font-weight: bold; font-size: 11px;">🔖 121 users</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="https://dailyportalz.jp/kiji/nishino-suido" target="_blank" rel="noopener noreferrer">
+                閉所恐怖症には致死量かな？「西野水道」は無料で入れる洞窟系スポットだ！
+              </a>
+            </h3>
+            <p class="card-summary">週末と有給を利用し、日本7周目をマイカーで巡るサラリーマン。走行距離・立ち寄りスポット数は、おそらくアマチュア日本トップクラス。 前の記事：まさかこの店が現役営業していたなんて！500円のかに飯の店「かに太郎」、その攻略談 ＞ 個人サイト 週末大冒険 2代目西野水道（暗いけど安全） 琵琶湖の北西部の田園地帯...</p>
+            <div class="card-impact">
+              → 上下水道広域化・持続可能インフラ政策の波及影響確認
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">はてなブックマーク (水道・インフラ)</span>
+              <span class="card-score">スコア: 20.0pt</span>
+              
+              <span style="color: #fb923c; font-weight: bold; font-size: 11px;">🔖 98 users</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="https://note.com/reading_monkey/n/n0304bb63df5d" target="_blank" rel="noopener noreferrer">
+                「共産主義」という万能の敵――健康保険・オープンソース・水道水フッ化物添加まで「赤く」塗るレッテル政治史｜Reading Monkey
+              </a>
+            </h3>
+            <p class="card-summary">社会政策・公民権・知識コモンズ・制度設計を横断する概念拡張と治安化 要旨公的健康保険、社会保障、公営住宅、公民権運動、水道水フッ化物添加、土地改革、環境政策、図書館の「知る自由」、オープンソース・ソフトウェア、著作権の柔軟化、15分都市。これらは目的も制度も相互に大きく異なる。それにもかかわらず、歴...</p>
+            <div class="card-impact">
+              → 上下水道広域化・持続可能インフラ政策の波及影響確認
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">PR TIMES</span>
+              <span class="card-score">スコア: 17.0pt</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE5IZ0dDRmhEZ2dSa3RIT1YtSzZZRzYxbGRDS3I4cGlHYm5yZTU2bUE5YW9IYVkzeE52aTU3OFhlZTBmVEVKYWJFRHBBSGRLS3prc0pkMmxfX2lhTlNocVFGdjhudzhWb3hPMGc?oc=5" target="_blank" rel="noopener noreferrer">
+                愛媛県・八幡浜市上下水道課が、衛星データとAIを活用した水道DXソリューション「宇宙水道局」を導入
+              </a>
+            </h3>
+            <p class="card-summary">愛媛県・八幡浜市上下水道課が、衛星データとAIを活用した水道DXソリューション「宇宙水道局」を導入 PR TIMES</p>
+            <div class="card-impact">
+              → 検針・漏水監視DXの先行導入事例のベンチマーク
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">はてなブックマーク (水道・インフラ)</span>
+              <span class="card-score">スコア: 16.0pt</span>
+              
+              <span style="color: #fb923c; font-weight: bold; font-size: 11px;">🔖 25 users</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="https://www.nikkei.com/article/DGXZQOGR30BZA0Q6A730C2000000/" target="_blank" rel="noopener noreferrer">
+                水不足の英国、2300万人にホース禁止令　2割漏水の水道会社に不満 - 日本経済新聞
+              </a>
+            </h3>
+            <p class="card-summary">ホースで家の草木に水やりするのは禁止――。英国の主要な水道会社が7月以降、節水のため相次いで一般利用者に通告した。対象は2300万人にのぼる。上水道の漏水率が20%を超える水道会社もあり、投資を怠ってきた会社や問題を放置してきた政府への国民の不満が募る。「1週間前に報告した水漏れがまだ続いている。ホースの使...</p>
+            <div class="card-impact">
+              → 上下水道広域化・持続可能インフラ政策の波及影響確認
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">東信ジャーナル</span>
+              <span class="card-score">スコア: 14.0pt</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE93QkJLZjBEN3FLbkJxd3ZYQWlyb3dBajRveVlUbWJLejlVWHJLOTNDQ092Tmd4VER4TXc3RFp4N2VqZXM4bUZYQTg0ZFFTTlFsd05BODFJcWM?oc=5" target="_blank" rel="noopener noreferrer">
+                上田市「水道事業の広域化」市独自の財政シミュレーションを実施！ ＜上田市議会９月定例会・一般質問＞2026
+              </a>
+            </h3>
+            <p class="card-summary">上田市「水道事業の広域化」市独自の財政シミュレーションを実施！ ＜上田市議会９月定例会・一般質問＞2026 東信ジャーナル</p>
+            <div class="card-impact">
+              → 上下水道広域化・持続可能インフラ政策の波及影響確認
+            </div>
+          </article>
+          
+        </div>
+      </section>
+      
+      <section class="category-section" id="cat-ff14">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span>⚔️</span> FF14 (ファイナルファンタジーXIV)
+          </h2>
+          <span class="section-count">厳選 5 本</span>
+        </div>
+
+        <div class="article-grid">
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">FFXIV Lodestone 公式Topics</span>
+              <span class="card-score">スコア: 17.0pt</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="https://jp.finalfantasyxiv.com/lodestone/topics/detail/67caf3b6b5e0ee7569afb5ec8bdcae5113f9df49" target="_blank" rel="noopener noreferrer">
+                7.56パッチノート公開！
+              </a>
+            </h3>
+            <p class="card-summary">ハルマルトが告げた、すべての世界を待ち受ける「明日の果て」。その運命を覆すべく、冒険者たちは再び歩み始めます。 さらにパッチ7.56では、新たなリミテッドジョブ「魔獣使い」や魔獣使い専用のバトルコンテンツ「闘獣練」が追加されるほか、「至天の座アルカディア零式：ヘビー級」の週制限が撤廃され、超える力が発生するようになります。 詳しくは『 こちら 』をご覧ください。</p>
+            <div class="card-impact">
+              → アップデート内容の確認と新コンテンツ攻略の計画
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">FFXIV Lodestone 公式Topics</span>
+              <span class="card-score">スコア: 17.0pt</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="https://jp.finalfantasyxiv.com/lodestone/topics/detail/35d881d22728101355344b8a775e1560684e0bab" target="_blank" rel="noopener noreferrer">
+                「ファンフェスティバル 2026 in 東京」ライブビューイング開催決定！ チケット販売は9月11日（金）から
+              </a>
+            </h3>
+            <p class="card-summary">「ファンフェスティバル 2026 in 東京」のステージプログラム「基調講演」、「スペシャルライブ - THE PRIMALS」のライブビューイング開催が決定しました！ 現地に来られない方も、全国のイオンシネマで、大スクリーンならではの迫力と臨場感でステージをお楽しみいただけます。応援上映のため、声出しやペンライトの使用もOK！ 当日は会場の光の戦士たちと一緒に盛り上がりましょう！ 詳しくは『 こちら 』をご覧ください。</p>
+            <div class="card-impact">
+              → コミュニティ動向とトレンド装備・金策情報のチェック
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">FFXIV Lodestone 公式Topics</span>
+              <span class="card-score">スコア: 17.0pt</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="https://jp.finalfantasyxiv.com/lodestone/topics/detail/a4ae60b835f3334555703c6b0fd3eae3b2fb4e1d" target="_blank" rel="noopener noreferrer">
+                「黄金秘話」第6話公開！
+              </a>
+            </h3>
+            <p class="card-summary">これまで歩んできた物語に寄り添う、特別に綴られた読み物、「黄金秘話」を更新しました。 今回は、「第6話： 幼き兄妹の決意」をお届けします。 黄金秘話特設ページは『 こちら 』。 ※黄金秘話は「黄金のレガシー」のストーリーやコンテンツのネタバレを含むため、コンプリートしていない方はご注意ください。 ※全4回（第5～8話）の更新を予定しています。</p>
+            <div class="card-impact">
+              → コミュニティ動向とトレンド装備・金策情報のチェック
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">FFXIV Lodestone 公式Topics</span>
+              <span class="card-score">スコア: 17.0pt</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="https://jp.finalfantasyxiv.com/lodestone/topics/detail/4bdf607ce27e18cf51f06c3421062a028e2da30c" target="_blank" rel="noopener noreferrer">
+                定額制聴き放題サービスで「黄金のレガシー」サントラ第1弾 配信中！
+              </a>
+            </h3>
+            <p class="card-summary">2024年10月に発売された「DAWNTRAIL: FINAL FANTASY XIV Original Soundtrack」が、定額制聴き放題サービスでお楽しみいただけるようになりました！ このアルバムには、『黄金のレガシー』の主題歌「Dawntrail」をはじめ、フィールドや討滅戦、「至天の座アルカディア：ライトヘビー級」などのゲーム内楽曲66曲が収録されています。 これまでの旅の思い出を、音楽とともに振り返ってみるのはいかがでしょうか。 配信サイトは『 こちら 』でご確認ください。 ※楽</p>
+            <div class="card-impact">
+              → コミュニティ動向とトレンド装備・金策情報のチェック
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">FFXIV Lodestone 公式Topics</span>
+              <span class="card-score">スコア: 17.0pt</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="https://jp.finalfantasyxiv.com/lodestone/topics/detail/ae0caabcfeb32c5f503100419189d7de93f70a78" target="_blank" rel="noopener noreferrer">
+                東京ゲームショウ2026 出展情報&会場グッズ販売情報！
+              </a>
+            </h3>
+            <p class="card-summary">9月17日（木） から幕張メッセで開催される東京ゲームショウ2026に出展します。 スクウェア・エニックスブースでは、欧州ファンフェスで公開した「白銀のワンダラー」のトレーラーなどの映像を大型ビジョンで放映するほか、モーグリとアルファが遊びに来るキャラクターグリーティングを実施します。また、「FFVII リベレーション×FFXIV オリジナルバッグ」をご来場いただいた皆さんに配布予定です。 さらに、会場内のSQUARE ENIX SHOPでは新オフィシャルグッズを先行販売します。 詳しくは『 こ</p>
+            <div class="card-impact">
+              → コミュニティ動向とトレンド装備・金策情報のチェック
+            </div>
+          </article>
+          
+        </div>
+      </section>
+      
+      <section class="category-section" id="cat-game">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span>🎮</span> ゲーム全般・エンタメ
+          </h2>
+          <span class="section-count">厳選 5 本</span>
+        </div>
+
+        <div class="article-grid">
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">AUTOMATON</span>
+              <span class="card-score">スコア: 17.0pt</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="https://automaton-media.com/articles/newsjp/20260911-466754/" target="_blank" rel="noopener noreferrer">
+                Ubisoft、Steamでの“ランチャー二重起動”を順次廃止へ。まずは『プリンス オブ ペルシャ 失われた王冠』からテスト中
+              </a>
+            </h3>
+            <p class="card-summary">Ubisoftは9月11日、Steam版『プリンス オブ ペルシャ 失われた王冠』にアップデートを実施。これまで必要だったUbisoft Connect PCの起動を不要とする対応が行われた。</p>
+            <div class="card-impact">
+              → ウィッシュリスト登録・プレイ予定タイトルの価格動向確認
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">4Gamer.net 最新</span>
+              <span class="card-score">スコア: 17.0pt</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="https://www.4gamer.net/games/967/G096799/20260911005/" target="_blank" rel="noopener noreferrer">
+                「Infinity: HexaDome Tactics」，Steamで配信開始。SFボードゲーム「Infinity」の世界を舞台にした1対1のターン制アリーナ・タクティクスゲーム
+              </a>
+            </h3>
+            <p class="card-summary">BlindspotGamesは2026年9月11日，PCゲーム「Infinity:HexaDomeTactics」をSteamで配信した。価格は2600円（税込）。本作はSFボードゲーム「Infinity」の世界を舞台にした1対1のターン制アリーナ・タクティクスゲームだ。</p>
+            <div class="card-impact">
+              → ウィッシュリスト登録・プレイ予定タイトルの価格動向確認
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">4Gamer.net 最新</span>
+              <span class="card-score">スコア: 17.0pt</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="https://www.4gamer.net/games/025/G102544/20260909032/" target="_blank" rel="noopener noreferrer">
+                育てた宇宙生物に意識を移して戦う，育成×TPSアクション「ボイドリング・バウンド」（あかねのSteam Pick Up！）
+              </a>
+            </h3>
+            <p class="card-summary">本日の「あかねのSteamPickUp！」では，育てた宇宙生物に神経接続し，自ら操作して戦う育成アクション「ボイドリング・バウンド」を紹介。宇宙生物ボイドリングを進化や交配で育て上げ，惑星を蝕む脅威へ立ち向かうのじゃ。</p>
+            <div class="card-impact">
+              → ウィッシュリスト登録・プレイ予定タイトルの価格動向確認
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">Game*Spark</span>
+              <span class="card-score">スコア: 17.0pt</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="http://www.gamespark.jp/article/2026/09/11/172122.html" target="_blank" rel="noopener noreferrer">
+                ユービーアイ製PCゲーが遊びやすくなるかも…まずはSteam版『プリンス オブ ペルシャ 失われた王冠』にてUbisoft ConnectのPCランチャーのインストール・起動が不要に
+              </a>
+            </h3>
+            <p class="card-summary">ユービーアイ製PCゲーが遊びやすくなるかも…まずはSteam版『プリンス オブ ペルシャ 失われた王冠』にてUbisoft ConnectのPCランチャーのインストール・起動が不要に</p>
+            <div class="card-impact">
+              → ウィッシュリスト登録・プレイ予定タイトルの価格動向確認
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">Game*Spark</span>
+              <span class="card-score">スコア: 17.0pt</span>
+              
+            </div>
+            <h3 class="card-title">
+              <a href="http://www.gamespark.jp/article/2026/09/11/172118.html" target="_blank" rel="noopener noreferrer">
+                「非常に好評」帰宅を目指す協力アドベンチャー『RV There Yet?』湾岸の新ステージ配信開始―Steam版の過去最安セールも開催
+              </a>
+            </h3>
+            <p class="card-summary">「非常に好評」帰宅を目指す協力アドベンチャー『RV There Yet?』湾岸の新ステージ配信開始―Steam版の過去最安セールも開催</p>
+            <div class="card-impact">
+              → ウィッシュリスト登録・プレイ予定タイトルの価格動向確認
+            </div>
+          </article>
+          
+        </div>
+      </section>
+      
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="newspaper-footer">
+      <p>発行: TECH NEWS DIGEST 新聞自動生成システム | 1日の終わりに充実のインプットを</p>
+    </footer>
+  </div>
+
+</body>
+</html>

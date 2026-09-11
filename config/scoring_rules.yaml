@@ -1,0 +1,44 @@
+weights:
+  popularity: 0.4
+  impact: 0.6
+
+categories:
+  ai:
+    high_priority_keywords:
+      - score: 15
+        words: ["Claude", "GPT-5", "Gemini", "Claude Code", "Agent", "マルチモーダル", "推論モデル", "OpenAI", "Anthropic", "DeepSeek", "Cursor"]
+      - score: 10
+        words: ["自動化", "業務効率化", "API", "オープンソース", "ローカルLLM", "プロンプト", "LangChain", "RAG"]
+    penalty_keywords:
+      - score: -10
+        words: ["ポエム", "煽り", "副業で稼ぐ", "誰でも簡単", "競艇", "競馬"]
+
+  water:
+    high_priority_keywords:
+      - score: 15
+        words: ["官民連携", "PFI", "ウォーターPPP", "耐震化", "管路更新", "スマートメーター", "水道DX", "老朽化対策"]
+      - score: 10
+        words: ["浄水場", "下水道資源化", "漏水検知", "AI水処理", "水質管理", "広域化", "下水道管", "国土交通省", "環境省"]
+    penalty_keywords:
+      - score: -10
+        words: ["ウォーターサーバー勧誘", "断水事故（軽微な告知）", "水漏れ修理業者広告"]
+
+  ff14:
+    high_priority_keywords:
+      - score: 15
+        words: ["パッチ", "PLL", "プロデューサーレターLIVE", "アップデート", "7.", "絶", "零式", "ファンフェス", "黄金のレガシー"]
+      - score: 10
+        words: ["メンテナンス", "モグモグ★コレクション", "PvP", "ハウジング", "ミラプリ", "ジョブ調整", "吉田直樹"]
+    penalty_keywords:
+      - score: -8
+        words: ["RMT", "アカウント売買", "晒し"]
+
+  game:
+    high_priority_keywords:
+      - score: 15
+        words: ["Steam", "Nintendo Switch", "PlayStation", "新作発表", "GOTY", "インディーゲーム", "セール", "Game Pass"]
+      - score: 10
+        words: ["大型アップデート", "レビュー", "Unreal Engine", "ゲーム業界", "開発者インタビュー", "TGS"]
+    penalty_keywords:
+      - score: -8
+        words: ["リセマラ", "ガチャ確率", "攻略wikiまとめ速報"]

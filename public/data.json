@@ -1,680 +1,245 @@
 {
-  "generated_at": "2026-05-27T09:02:10.772897+00:00",
+  "generated_at": "2026-09-11T02:52:16.182845+00:00",
   "articles": [
     {
-      "source": "Zenn",
-      "title": "Claude Codeのスキルが毎日勝手に改善されていく仕組みを作った",
-      "url": "https://zenn.dev/sonicgarden/articles/claude-code-self-improving-loop",
-      "raw_score": 128,
-      "published_at": "2026-05-24T00:00:05.137+09:00",
-      "normalized_score": 100,
-      "is_boosted": true
-    },
-    {
-      "source": "Qiita",
-      "title": "【完全版】AIセキュリティ地獄絵図2026 - CVE・攻撃手法・防御策を全部解説する",
-      "url": "https://qiita.com/emi_ndk/items/a36051a97d3b0670bedd?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-26T18:51:29+09:00",
-      "normalized_score": 100,
-      "is_boosted": true
-    },
-    {
-      "source": "Qiita",
-      "title": "PythonとJavaのコードの違い",
-      "url": "https://qiita.com/karusifa2/items/75b8ff55095604bd48b5?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-27T09:03:09+09:00",
-      "normalized_score": 100,
-      "is_boosted": true
-    },
-    {
-      "source": "Qiita",
-      "title": "Pythonの制御構造について【基礎】",
-      "url": "https://qiita.com/sakurada110/items/d39b79afdbfadf5a2267?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-27T09:01:59+09:00",
-      "normalized_score": 100,
-      "is_boosted": true
-    },
-    {
-      "source": "Hatebu",
-      "title": "【超入門】Claude Codeの使い方〜初心者が1日でCLAUDE.mdとskillsを作る最短手順〜",
-      "url": "https://newspicks.com/news/16754918/body/",
-      "raw_score": 537,
-      "published_at": "",
-      "normalized_score": 100,
-      "is_boosted": true
-    },
-    {
-      "source": "HackerNews",
-      "title": "A few interesting modern pixel fonts",
-      "url": "https://unsung.aresluna.org/a-few-interesting-modern-pixel-fonts/",
-      "raw_score": 344,
-      "published_at": "2026-05-25T20:41:49+00:00",
-      "normalized_score": 100.0,
-      "is_boosted": false
-    },
-    {
-      "source": "Qiita",
-      "title": "1割の“信頼される”エンジニアがやっている「何の話かを省略しない説明」",
-      "url": "https://qiita.com/hitomin_poke/items/a8c2c14a72a417619c1d?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-27T14:52:26+09:00",
-      "normalized_score": 95,
-      "is_boosted": false
-    },
-    {
-      "source": "HackerNews",
-      "title": "That Methyl Methacrylate Tank",
-      "url": "https://www.science.org/content/blog-post/methyl-methacrylate-tank",
-      "raw_score": 326,
-      "published_at": "2026-05-26T19:25:16+00:00",
-      "normalized_score": 94.6,
-      "is_boosted": false
-    },
-    {
-      "source": "Zenn",
-      "title": "【GitHub Actions】actions/checkout には persist-credentials: false を設定するべき",
-      "url": "https://zenn.dev/kou_pg_0131/articles/gha-checkout-persist-credentials",
-      "raw_score": 116,
-      "published_at": "2026-05-25T18:00:07.842+09:00",
-      "normalized_score": 89.5,
-      "is_boosted": false
-    },
-    {
-      "source": "Qiita",
-      "title": "【新入社員研修】Linuxの基本操作",
-      "url": "https://qiita.com/cookiepunch/items/f02c34ae6dc994cd3084?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-27T09:00:22+09:00",
-      "normalized_score": 80,
-      "is_boosted": false
-    },
-    {
-      "source": "HackerNews",
-      "title": "The worst job interview I ever had",
-      "url": "https://www.oliverio.dev/blog/the-worst-job-interview-i-had",
-      "raw_score": 270,
-      "published_at": "2026-05-26T20:11:49+00:00",
-      "normalized_score": 77.7,
-      "is_boosted": false
-    },
-    {
-      "source": "Qiita",
-      "title": "コミュニケーションは大事",
-      "url": "https://qiita.com/Rikusato/items/d942ba887cf78ae0c937?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-27T09:03:15+09:00",
-      "normalized_score": 75,
-      "is_boosted": false
-    },
-    {
-      "source": "Qiita",
-      "title": "Linuxのテキストエディタ　viとnano",
-      "url": "https://qiita.com/steiji/items/0675640c728125a628c4?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-27T09:18:48+09:00",
-      "normalized_score": 70,
-      "is_boosted": false
-    },
-    {
-      "source": "HackerNews",
-      "title": "I built a Git-tracked book production pipeline",
-      "url": "https://www.djspeckhals.com/posts/2026-05-22-how-i-bypassed-adobe-and-microsoft-to-build-a-git-tracked-book-production-pipeline/",
-      "raw_score": 233,
-      "published_at": "2026-05-22T17:17:43+00:00",
-      "normalized_score": 66.6,
-      "is_boosted": false
-    },
-    {
-      "source": "Hatebu",
-      "title": "好きな文字化け発表ドラゴン - Qiita",
-      "url": "https://qiita.com/IkadzuchiPleist/items/5069659ac7e7b2ea79c4",
-      "raw_score": 362,
-      "published_at": "",
-      "normalized_score": 66.5,
-      "is_boosted": false
-    },
-    {
-      "source": "Qiita",
-      "title": "文系未経験エンジニアが研修で学んだLinuxコマンド備忘録",
-      "url": "https://qiita.com/s-sakaguchis/items/6303ef4ef36779011972?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-26T08:54:45+09:00",
-      "normalized_score": 65,
-      "is_boosted": false
-    },
-    {
-      "source": "Qiita",
-      "title": "Pythonのリストって？",
-      "url": "https://qiita.com/DON-DON-DON/items/29d3b6b82a8bb1f14ca8?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-26T09:03:12+09:00",
-      "normalized_score": 65,
-      "is_boosted": true
-    },
-    {
-      "source": "Qiita",
-      "title": "データベース新卒研修まとめ",
-      "url": "https://qiita.com/t-osanai3150/items/80347bcd89a8a51c0298?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-26T09:10:40+09:00",
-      "normalized_score": 60,
-      "is_boosted": false
-    },
-    {
-      "source": "Zenn",
-      "title": "なぜAnthropicはプロンプトにXMLタグを推奨するのか──Markdownとの構造的な違い",
-      "url": "https://zenn.dev/yun_bow/articles/a339e1d31a4c43",
-      "raw_score": 82,
-      "published_at": "2026-05-24T13:37:14.065+09:00",
-      "normalized_score": 59.6,
-      "is_boosted": false
-    },
-    {
-      "source": "HackerNews",
-      "title": "Cloudflare Flagship",
-      "url": "https://developers.cloudflare.com/flagship/",
-      "raw_score": 210,
-      "published_at": "2026-05-26T23:36:06+00:00",
-      "normalized_score": 59.6,
-      "is_boosted": false
-    },
-    {
-      "source": "Qiita",
-      "title": "『入社１年目の教科書』　意識したい３つの原則",
-      "url": "https://qiita.com/toufukane/items/c5d039e4efec7f0fb3f7?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-26T09:04:13+09:00",
-      "normalized_score": 55,
-      "is_boosted": false
-    },
-    {
-      "source": "Qiita",
-      "title": "【Claude Code / Codex × GAS】コピペ脱出！Google Workspace自動化レシピ7選",
-      "url": "https://qiita.com/TMiyamoto/items/47a13155032f716a43bd?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-27T13:39:16+09:00",
-      "normalized_score": 55,
-      "is_boosted": true
-    },
-    {
-      "source": "Qiita",
-      "title": "相対パスを使ってcd ..\\..\\〇〇と書けることを知らなかったのでメモ",
-      "url": "https://qiita.com/kbysnbt/items/174792be640713601f26?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-26T09:03:28+09:00",
-      "normalized_score": 45,
-      "is_boosted": false
-    },
-    {
-      "source": "Zenn",
-      "title": "DevOps を閉じる ―― オブザーバビリティとは何か",
-      "url": "https://zenn.dev/ntk221/articles/ff6f235208cfcd",
-      "raw_score": 60,
-      "published_at": "2026-05-24T15:55:30.665+09:00",
-      "normalized_score": 40.4,
-      "is_boosted": false
-    },
-    {
-      "source": "Hatebu",
-      "title": "LLMのローカル実行ツール「Ollama」が「Codex」アプリに対応／v0.24.0がリリース",
-      "url": "https://forest.watch.impress.co.jp/docs/news/2111597.html",
-      "raw_score": 140,
-      "published_at": "",
-      "normalized_score": 38.9,
-      "is_boosted": true
-    },
-    {
-      "source": "Zenn",
-      "title": "TypeScriptの裏側を浴びた2日間 ── TSKaigi 2026参加記",
-      "url": "https://zenn.dev/0st_ts/articles/7878ffe89b8c6a",
-      "raw_score": 37,
-      "published_at": "2026-05-25T19:00:07.664+09:00",
-      "normalized_score": 35.2,
-      "is_boosted": true
-    },
-    {
-      "source": "Qiita",
-      "title": "報連相の重要性",
-      "url": "https://qiita.com/penta2525/items/46fd3c7066b0f3c1b13e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-25T09:04:48+09:00",
-      "normalized_score": 35,
-      "is_boosted": false
-    },
-    {
-      "source": "Hatebu",
-      "title": "ChatGPTに「職場でバカって言う人どう思う？」って聞いたら「許せないね！」→「私が言ったんだよね」って返したら「気持ちわかるよ」って言ってきたから適当",
-      "url": "https://togetter.com/li/2701884",
-      "raw_score": 182,
-      "published_at": "",
-      "normalized_score": 32.0,
-      "is_boosted": false
-    },
-    {
-      "source": "Hatebu",
-      "title": "【ソフトウェア開発現代史】継続的デリバリーができない組織でAIは増幅器(amplifier)として空回りを生む 〜Dave Farley氏の来日に寄せて〜 - Findy Tech Blog",
-      "url": "https://tech.findy.co.jp/entry/2026/05/27/070000",
-      "raw_score": 104,
-      "published_at": "",
-      "normalized_score": 32.0,
-      "is_boosted": true
-    },
-    {
-      "source": "Qiita",
-      "title": "[初心者]Linuxと仲良くなれるコマンド3選",
-      "url": "https://qiita.com/sakui2i/items/e7939e9f2a8b3e8177f8?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-25T09:38:37+09:00",
-      "normalized_score": 30,
-      "is_boosted": false
-    },
-    {
-      "source": "Zenn",
-      "title": "Claude × Obsidian で「感情の跡」を残す仕組みを作る",
-      "url": "https://zenn.dev/miyaken0805/articles/ed70d88fa81c34",
-      "raw_score": 31,
-      "published_at": "2026-05-26T09:43:00.953+09:00",
-      "normalized_score": 29.9,
-      "is_boosted": true
-    },
-    {
-      "source": "Zenn",
-      "title": "フロントエンドもアーキテクチャに向き合う！",
-      "url": "https://zenn.dev/luup_developers/articles/server-isamu-20260520",
-      "raw_score": 48,
-      "published_at": "2026-05-25T12:12:41.303+09:00",
-      "normalized_score": 29.8,
-      "is_boosted": false
-    },
-    {
-      "source": "Zenn",
-      "title": "Cursor から乗り換えた人向け、VSCode 版 Claude Code を使いやすくする6つの設定",
-      "url": "https://zenn.dev/sonicgarden/articles/1eefee01ee555b",
+      "source": "🤖 はてなブックマーク (AI・テクノロジー)",
+      "category": "AI・テクノロジー",
+      "category_key": "ai",
+      "title": "Countering misuse of AI: September 2026 / Anthropic",
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "summary": "Over the past eight months, our Threat Intelligence team identified and disrupted operations in which threat actors tried to use Claude for malicious activity. In this report, we share case studies from those operations and describe how malicious use",
+      "business_impact": "→ 最新モデルの性能検証と既存プロンプトの改修検討",
       "raw_score": 30,
-      "published_at": "2026-05-26T00:00:05.187+09:00",
-      "normalized_score": 29.0,
-      "is_boosted": true
+      "normalized_score": 25.0,
+      "published_at": "2026-09-10T19:40:09Z"
     },
     {
-      "source": "Zenn",
-      "title": "AIが書いたコードはAIが見る ── レビューが詰まらず、品質はむしろ上がる（連載Part 3）",
-      "url": "https://zenn.dev/aircloset/articles/91824e55b7fc9c",
-      "raw_score": 29,
-      "published_at": "2026-05-26T08:37:52.658+09:00",
-      "normalized_score": 28.2,
-      "is_boosted": true
+      "source": "🤖 はてなブックマーク (AI・テクノロジー)",
+      "category": "AI・テクノロジー",
+      "category_key": "ai",
+      "title": "「Ctrl+cするな！パソコンがバグる！だから右クリックからコピーを選んでコピペしろ！」という完全に狂っている上司の前で、無言でCtrl+cし続けたら退散した",
+      "url": "https://togetter.com/li/2744037",
+      "summary": "豊田さこつ @abaransyu 弊社、常識では考えられないこと(teamsは使うなメモは紙にかけ、iPadは使うなデジカメで写真を撮れ、メールの転送機能を知らないのでパソコンのメール画面をスマホで写真撮影して共有させる)をする上司がウヨウヨいて、その度にふざけて言ってるのかと思って「それは流石に面白いw」的な反応して...",
+      "business_impact": "→ 業務効率化ツールとしての実務適用可能性を調査",
+      "raw_score": 125,
+      "normalized_score": 24.0,
+      "published_at": "2026-09-10T17:19:06Z"
     },
     {
-      "source": "Qiita",
-      "title": "ビジネスマナーは“形”だけじゃない——新卒研修で学んだことと考えたこと",
-      "url": "https://qiita.com/yukidaruma110/items/a3e11fa3d865748a5610?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-25T09:13:55+09:00",
-      "normalized_score": 25,
-      "is_boosted": false
-    },
-    {
-      "source": "HackerNews",
-      "title": "Prompt Politeness Affects LLM Accuracy (2025)",
-      "url": "https://arxiv.org/abs/2510.04950",
-      "raw_score": 37,
-      "published_at": "2026-05-26T07:43:22+00:00",
-      "normalized_score": 22.5,
-      "is_boosted": true
-    },
-    {
-      "source": "HackerNews",
-      "title": "Claude Code as a Daily Driver: Claude.md, Skills, Subagents, Plugins, and MCPs",
-      "url": "https://arps18.github.io/posts/claude-code-mastery/",
-      "raw_score": 34,
-      "published_at": "2026-05-27T05:13:39+00:00",
-      "normalized_score": 21.6,
-      "is_boosted": true
-    },
-    {
-      "source": "Hatebu",
-      "title": "“週4日勤務”が想像以上の成功──「給与100％／労働時間80％／生産性100％」を豪州15社が実施　学術誌にも掲載",
-      "url": "https://www.itmedia.co.jp/news/articles/2605/27/news023.html",
-      "raw_score": 122,
-      "published_at": "",
-      "normalized_score": 20.5,
-      "is_boosted": false
-    },
-    {
-      "source": "Zenn",
-      "title": "DevContainerより軽量？Devboxで開発環境を瞬時に作る",
-      "url": "https://zenn.dev/arkbig/articles/devbox_0b6b39cd097e3288fe58baa5a49c7d39a28c5b46849",
-      "raw_score": 20,
-      "published_at": "2026-05-25T23:14:03.960+09:00",
-      "normalized_score": 20.3,
-      "is_boosted": true
-    },
-    {
-      "source": "Qiita",
-      "title": "Linuxと仲良くなりたい",
-      "url": "https://qiita.com/s-okada0203/items/227c9bd2cf58d99a6033?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-25T09:02:05+09:00",
-      "normalized_score": 20,
-      "is_boosted": false
-    },
-    {
-      "source": "Qiita",
-      "title": "【35歳未経験でも理解できた】Ruby on Rails 前編",
-      "url": "https://qiita.com/wata-sho/items/34010e35cd35c797d258?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-26T10:21:11+09:00",
-      "normalized_score": 20,
-      "is_boosted": true
-    },
-    {
-      "source": "Hatebu",
-      "title": "UIデザインはもちろん、イラストや紙のデザインにも対応！ カラーパレットをAIで生成できる完全無料ツール -EnigmaEasel",
-      "url": "https://coliss.com/articles/build-websites/operation/work/the-ai-powered-suite-for-accessible-design.html",
-      "raw_score": 39,
-      "published_at": "",
-      "normalized_score": 19.6,
-      "is_boosted": true
-    },
-    {
-      "source": "Zenn",
-      "title": "KubernetesでMinecraftサーバーを運用すると何が難しいのか",
-      "url": "https://zenn.dev/alecjp02/articles/733a31ded01de5",
-      "raw_score": 36,
-      "published_at": "2026-05-25T14:04:57.118+09:00",
-      "normalized_score": 19.3,
-      "is_boosted": false
-    },
-    {
-      "source": "Hatebu",
-      "title": "新聞用DTPを、新聞記者がつくった理由。フリーソフト「朝刊太郎」の数奇な27年【フォーカス】 - レバテックLAB",
-      "url": "https://levtech.jp/media/detail_865/",
-      "raw_score": 116,
-      "published_at": "",
-      "normalized_score": 19.3,
-      "is_boosted": false
-    },
-    {
-      "source": "Hatebu",
-      "title": "Codex が SKILL.md を 220 行で打ち切っていた話",
-      "url": "https://zenn.dev/haru0416/articles/codex-skill-md-220-lines",
-      "raw_score": 115,
-      "published_at": "",
-      "normalized_score": 19.2,
-      "is_boosted": false
-    },
-    {
-      "source": "Hatebu",
-      "title": "ドコモのネットワークはなぜ遅かったのか　体制確立で反転への手応え【石野純也のモバイル通信SE】",
-      "url": "https://www.watch.impress.co.jp/docs/series/ishino/2111397.html",
-      "raw_score": 114,
-      "published_at": "",
-      "normalized_score": 19.0,
-      "is_boosted": false
-    },
-    {
-      "source": "Hatebu",
-      "title": "SaaSの権限管理設計を完全に理解した",
-      "url": "https://zenn.dev/rsugi/articles/19e0014a7040b3",
-      "raw_score": 114,
-      "published_at": "",
-      "normalized_score": 19.0,
-      "is_boosted": false
-    },
-    {
-      "source": "Hatebu",
-      "title": "今日は新卒研修で情報系卒の子が「Javaなんてレガシーでやる必要ない」と言ってたのがハイライト⇒これから現実知るんだろうな…",
-      "url": "https://posfie.com/@kalofollow/p/AIxhrl9",
-      "raw_score": 113,
-      "published_at": "",
-      "normalized_score": 18.8,
-      "is_boosted": false
-    },
-    {
-      "source": "Zenn",
-      "title": "TSKaigi 2026 にチームラボのフロントエンド班として参加しました",
-      "url": "https://zenn.dev/teamlab_fe/articles/aaffd117e03c34",
-      "raw_score": 16,
-      "published_at": "2026-05-26T15:23:00.464+09:00",
-      "normalized_score": 16.8,
-      "is_boosted": true
-    },
-    {
-      "source": "Hatebu",
-      "title": "【やじうまPC Watch】 東大、ゼロからLLMを作る教材「EveryonesLLM」",
-      "url": "https://pc.watch.impress.co.jp/docs/news/yajiuma/2111974.html",
-      "raw_score": 24,
-      "published_at": "",
-      "normalized_score": 16.7,
-      "is_boosted": true
-    },
-    {
-      "source": "Hatebu",
-      "title": "TSKaigi 2026 の発表資料の体感半数以上が AI 生成感あるものだった - mizdra's blog",
-      "url": "https://www.mizdra.net/entry/2026/05/27/161559",
-      "raw_score": 22,
-      "published_at": "",
-      "normalized_score": 16.3,
-      "is_boosted": true
-    },
-    {
-      "source": "Hatebu",
-      "title": "AMD製の広範なプロセッサーに脆弱性 ～Athlon 3000からRyzen 9000/AI 300までに影響／2026年5月のセキュリティ情報を公開、BIOSの更新を",
-      "url": "https://forest.watch.impress.co.jp/docs/news/2112012.html",
-      "raw_score": 21,
-      "published_at": "",
-      "normalized_score": 16.1,
-      "is_boosted": true
-    },
-    {
-      "source": "Zenn",
-      "title": "Codex が SKILL.md を 220 行で打ち切っていた話",
-      "url": "https://zenn.dev/haru0416/articles/codex-skill-md-220-lines",
-      "raw_score": 32,
-      "published_at": "2026-05-26T07:59:14.952+09:00",
-      "normalized_score": 15.8,
-      "is_boosted": false
-    },
-    {
-      "source": "Hatebu",
-      "title": "Webディレクターの日常的なAI活用について - ぐるなびをちょっと良くするエンジニアブログ",
-      "url": "https://developers.gnavi.co.jp/entry/ai-for-webdirectors/",
-      "raw_score": 19,
-      "published_at": "",
-      "normalized_score": 15.8,
-      "is_boosted": true
-    },
-    {
-      "source": "Hatebu",
-      "title": "DuckDuckGoのユーザー数が急増、Google I/OでのAI関連の発表を受けて",
-      "url": "https://gigazine.net/news/20260527-not-google-but-duckduckgo/",
-      "raw_score": 18,
-      "published_at": "",
-      "normalized_score": 15.6,
-      "is_boosted": true
-    },
-    {
-      "source": "Zenn",
-      "title": "TsKaigi 2026の振り返りをします。自分の登壇の反省など。",
-      "url": "https://zenn.dev/melonps/articles/b3b7f6d3014c3d",
+      "source": "🤖 はてなブックマーク (AI・テクノロジー)",
+      "category": "AI・テクノロジー",
+      "category_key": "ai",
+      "title": "Native is now the future of mobile at Shopify (2026) - Shopify",
+      "url": "https://shopify.engineering/back-to-native",
+      "summary": "Native is now the future of mobile at ShopifyCoding agents changed what it costs to build mobile apps twice. Here’s why Shopify is moving from React Native back to Swift and Kotlin. We decided to go all-in on React Native back in 2020, and that bet h",
+      "business_impact": "→ コーディング・定常業務へのエージェント導入検証が急務",
       "raw_score": 14,
-      "published_at": "2026-05-26T19:40:55.670+09:00",
-      "normalized_score": 15.0,
-      "is_boosted": true
+      "normalized_score": 21.0,
+      "published_at": "2026-09-10T19:08:31Z"
     },
     {
-      "source": "Qiita",
-      "title": "Cisco IOSモードの超ザックリとした覚え方",
-      "url": "https://qiita.com/yomch703/items/f493dac42a3efaf4ec42?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "🤖 ITmedia AI+",
+      "category": "AI・テクノロジー",
+      "category_key": "ai",
+      "title": "Windows用「Gemini」アプリ提供開始　画面上に重ねて作業を中断せず利用可能に",
+      "url": "https://www.itmedia.co.jp/news/article/2609/11/2000001399/",
+      "summary": "Googleは、Windows向けデスクトップアプリ「Gemini app for Windows」を公開した。Windows 10および11に対応し、UIは日本語をサポートする。［Alt］＋［Space］で作業画面上に重ねて呼び出せるほか、自律型AIエージェント「Gemini Spark」や画像・動画生成もPC上で利用できる（一部は有料プランが必要）。Mac版は4月にリリース済み。",
+      "business_impact": "→ 最新モデルの性能検証と既存プロンプトの改修検討",
+      "raw_score": 2,
+      "normalized_score": 18.2,
+      "published_at": "Fri, 11 Sep 2026 11:06:11 +0900"
+    },
+    {
+      "source": "🤖 ITmedia AI+",
+      "category": "AI・テクノロジー",
+      "category_key": "ai",
+      "title": "Amazon、OpenAIと広告で提携　Amazon DSPの広告主が「ChatGPT」内に広告出稿可能に",
+      "url": "https://www.itmedia.co.jp/news/article/2609/11/2000001396/",
+      "summary": "Amazon Adsは、OpenAIと提携して「ChatGPT」上での広告配信に対応すると発表した。広告主はAmazon DSPを通じ、会話画面下にテキストや画像広告を出稿できるようになる。まずは米国の成人無料プラン向けパイロットとして開始し、配信面の制御はOpenAIのシステムが担う。",
+      "business_impact": "→ 最新モデルの性能検証と既存プロンプトの改修検討",
+      "raw_score": 2,
+      "normalized_score": 18.2,
+      "published_at": "Fri, 11 Sep 2026 10:03:13 +0900"
+    },
+    {
+      "source": "💧 はてなブックマーク (水道・インフラ)",
+      "category": "上下水道・インフラ",
+      "category_key": "water",
+      "title": "閉所恐怖症には致死量かな？「西野水道」は無料で入れる洞窟系スポットだ！",
+      "url": "https://dailyportalz.jp/kiji/nishino-suido",
+      "summary": "週末と有給を利用し、日本7周目をマイカーで巡るサラリーマン。走行距離・立ち寄りスポット数は、おそらくアマチュア日本トップクラス。 前の記事：まさかこの店が現役営業していたなんて！500円のかに飯の店「かに太郎」、その攻略談 ＞ 個人サイト 週末大冒険 2代目西野水道（暗いけど安全） 琵琶湖の北西部の田園地帯...",
+      "business_impact": "→ 上下水道広域化・持続可能インフラ政策の波及影響確認",
+      "raw_score": 121,
+      "normalized_score": 24.0,
+      "published_at": "2026-08-25T02:10:19Z"
+    },
+    {
+      "source": "💧 はてなブックマーク (水道・インフラ)",
+      "category": "上下水道・インフラ",
+      "category_key": "water",
+      "title": "「共産主義」という万能の敵――健康保険・オープンソース・水道水フッ化物添加まで「赤く」塗るレッテル政治史｜Reading Monkey",
+      "url": "https://note.com/reading_monkey/n/n0304bb63df5d",
+      "summary": "社会政策・公民権・知識コモンズ・制度設計を横断する概念拡張と治安化 要旨公的健康保険、社会保障、公営住宅、公民権運動、水道水フッ化物添加、土地改革、環境政策、図書館の「知る自由」、オープンソース・ソフトウェア、著作権の柔軟化、15分都市。これらは目的も制度も相互に大きく異なる。それにもかかわらず、歴...",
+      "business_impact": "→ 上下水道広域化・持続可能インフラ政策の波及影響確認",
+      "raw_score": 98,
+      "normalized_score": 20.0,
+      "published_at": "2026-08-31T08:55:57Z"
+    },
+    {
+      "source": "💧 PR TIMES",
+      "category": "上下水道・インフラ",
+      "category_key": "water",
+      "title": "愛媛県・八幡浜市上下水道課が、衛星データとAIを活用した水道DXソリューション「宇宙水道局」を導入",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5IZ0dDRmhEZ2dSa3RIT1YtSzZZRzYxbGRDS3I4cGlHYm5yZTU2bUE5YW9IYVkzeE52aTU3OFhlZTBmVEVKYWJFRHBBSGRLS3prc0pkMmxfX2lhTlNocVFGdjhudzhWb3hPMGc?oc=5",
+      "summary": "愛媛県・八幡浜市上下水道課が、衛星データとAIを活用した水道DXソリューション「宇宙水道局」を導入 PR TIMES",
+      "business_impact": "→ 検針・漏水監視DXの先行導入事例のベンチマーク",
       "raw_score": 0,
-      "published_at": "2026-05-25T09:05:03+09:00",
-      "normalized_score": 15,
-      "is_boosted": false
+      "normalized_score": 17.0,
+      "published_at": "Mon, 07 Sep 2026 02:00:02 GMT"
     },
     {
-      "source": "Hatebu",
-      "title": "iPhoneでローカル動作する画像生成AI「Bonsai Image 4B」が登場したので使ってみた、FLUX.2 Klein 4Bを1bit版に魔改造してメモリ使用量を8.3分の1に削減",
-      "url": "https://gigazine.net/news/20260527-bonsai-image-4b-image-generation-ai/",
-      "raw_score": 15,
-      "published_at": "",
-      "normalized_score": 15.0,
-      "is_boosted": true
-    },
-    {
-      "source": "HackerNews",
-      "title": "The Melancholy of Slaying Monsters",
-      "url": "https://thereader.mitpress.mit.edu/the-strange-melancholy-of-slaying-monsters/",
-      "raw_score": 55,
-      "published_at": "2026-05-26T19:25:13+00:00",
-      "normalized_score": 13.0,
-      "is_boosted": false
-    },
-    {
-      "source": "Zenn",
-      "title": "「話しやすいエンジニア」になる価値。心理的安全性を自ら作る。",
-      "url": "https://zenn.dev/mavericks/articles/c40ef0a0652a64",
-      "raw_score": 26,
-      "published_at": "2026-05-26T18:00:05.467+09:00",
-      "normalized_score": 10.5,
-      "is_boosted": false
-    },
-    {
-      "source": "Zenn",
-      "title": "Hono+Inertia+hono/jsx という選択肢",
-      "url": "https://zenn.dev/ashunar0/articles/46183ade4729f1",
-      "raw_score": 26,
-      "published_at": "2026-05-25T16:17:40.345+09:00",
-      "normalized_score": 10.5,
-      "is_boosted": false
-    },
-    {
-      "source": "Qiita",
-      "title": "会社が変わっても消えないスキルとスタートアップという選択肢",
-      "url": "https://qiita.com/masa20057/items/fa1f6b0db92e497796ac?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "raw_score": 0,
-      "published_at": "2026-05-26T11:42:24+09:00",
-      "normalized_score": 10,
-      "is_boosted": false
-    },
-    {
-      "source": "HackerNews",
-      "title": "BadHost – CVE-2026-48710: Starlette Host-Header Auth Bypass",
-      "url": "https://badhost.org/",
-      "raw_score": 41,
-      "published_at": "2026-05-26T09:07:18+00:00",
-      "normalized_score": 8.7,
-      "is_boosted": false
-    },
-    {
-      "source": "HackerNews",
-      "title": "IBM Confidential: System/360 File Organization [video]",
-      "url": "https://www.youtube.com/watch?v=zokKqP0plrM",
-      "raw_score": 39,
-      "published_at": "2026-05-24T21:21:58+00:00",
-      "normalized_score": 8.1,
-      "is_boosted": false
-    },
-    {
-      "source": "HackerNews",
-      "title": "Cate v1.0 is out: The Infinite canvas workspace for developers",
-      "url": "https://github.com/0-AI-UG/cate",
-      "raw_score": 37,
-      "published_at": "2026-05-25T10:57:57+00:00",
-      "normalized_score": 7.5,
-      "is_boosted": false
-    },
-    {
-      "source": "Zenn",
-      "title": "pinact v4",
-      "url": "https://zenn.dev/shunsuke_suzuki/articles/pinact-v4-guide",
-      "raw_score": 22,
-      "published_at": "2026-05-26T08:47:36.887+09:00",
-      "normalized_score": 7.0,
-      "is_boosted": false
-    },
-    {
-      "source": "Zenn",
-      "title": "なけなしの130万を使って、Cloud Praticaに人生をオールインした話",
-      "url": "https://zenn.dev/fuji_1218/articles/67c734d19dd1b8",
-      "raw_score": 21,
-      "published_at": "2026-05-26T19:31:44.059+09:00",
-      "normalized_score": 6.1,
-      "is_boosted": false
-    },
-    {
-      "source": "Zenn",
-      "title": "サプライチェーン攻撃対策の「実効」を継続検証するGitHub監査基盤を内製した話",
-      "url": "https://zenn.dev/smartround_dev/articles/478c195bf914b6",
-      "raw_score": 21,
-      "published_at": "2026-05-26T10:29:33.408+09:00",
-      "normalized_score": 6.1,
-      "is_boosted": false
-    },
-    {
-      "source": "Zenn",
-      "title": "【Rust】2年の沈黙を破ったYewの現在",
-      "url": "https://zenn.dev/amenaruya/articles/d9718f5a25056b",
-      "raw_score": 20,
-      "published_at": "2026-05-26T00:07:15.401+09:00",
-      "normalized_score": 5.3,
-      "is_boosted": false
-    },
-    {
-      "source": "Hatebu",
-      "title": "SQLiteを利用したハイブリッド検索対応の軽量RAGの実現 - Taste of Tech Topics",
-      "url": "https://acro-engineer.hatenablog.com/entry/2026/05/27/120000",
-      "raw_score": 36,
-      "published_at": "",
-      "normalized_score": 4.0,
-      "is_boosted": false
-    },
-    {
-      "source": "HackerNews",
-      "title": "TSDuck: Open-source toolkit for MPEG-TS analysis and manipulation",
-      "url": "https://tsduck.io/",
+      "source": "💧 はてなブックマーク (水道・インフラ)",
+      "category": "上下水道・インフラ",
+      "category_key": "water",
+      "title": "水不足の英国、2300万人にホース禁止令　2割漏水の水道会社に不満 - 日本経済新聞",
+      "url": "https://www.nikkei.com/article/DGXZQOGR30BZA0Q6A730C2000000/",
+      "summary": "ホースで家の草木に水やりするのは禁止――。英国の主要な水道会社が7月以降、節水のため相次いで一般利用者に通告した。対象は2300万人にのぼる。上水道の漏水率が20%を超える水道会社もあり、投資を怠ってきた会社や問題を放置してきた政府への国民の不満が募る。「1週間前に報告した水漏れがまだ続いている。ホースの使...",
+      "business_impact": "→ 上下水道広域化・持続可能インフラ政策の波及影響確認",
       "raw_score": 25,
-      "published_at": "2026-05-27T02:22:59+00:00",
-      "normalized_score": 3.9,
-      "is_boosted": false
+      "normalized_score": 16.0,
+      "published_at": "2026-08-14T23:08:01Z"
     },
     {
-      "source": "HackerNews",
-      "title": "What Gets Kept",
-      "url": "https://www.newyorker.com/culture/the-weekend-essay/what-jack-kerouac-left-behind",
-      "raw_score": 23,
-      "published_at": "2026-05-24T16:46:25+00:00",
-      "normalized_score": 3.3,
-      "is_boosted": false
+      "source": "💧 東信ジャーナル",
+      "category": "上下水道・インフラ",
+      "category_key": "water",
+      "title": "上田市「水道事業の広域化」市独自の財政シミュレーションを実施！ ＜上田市議会９月定例会・一般質問＞2026",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE93QkJLZjBEN3FLbkJxd3ZYQWlyb3dBajRveVlUbWJLejlVWHJLOTNDQ092Tmd4VER4TXc3RFp4N2VqZXM4bUZYQTg0ZFFTTlFsd05BODFJcWM?oc=5",
+      "summary": "上田市「水道事業の広域化」市独自の財政シミュレーションを実施！ ＜上田市議会９月定例会・一般質問＞2026 東信ジャーナル",
+      "business_impact": "→ 上下水道広域化・持続可能インフラ政策の波及影響確認",
+      "raw_score": 0,
+      "normalized_score": 14.0,
+      "published_at": "Thu, 10 Sep 2026 06:55:31 GMT"
     },
     {
-      "source": "HackerNews",
-      "title": "A history of obituaries in American newspapers",
-      "url": "https://blogs.loc.gov/headlinesandheroes/2026/05/mourn-not-a-history-of-obituaries-in-american-newspapers/",
-      "raw_score": 20,
-      "published_at": "2026-05-24T19:22:18+00:00",
-      "normalized_score": 2.4,
-      "is_boosted": false
+      "source": "⚔️ FFXIV Lodestone 公式Topics",
+      "category": "FF14 (ファイナルファンタジーXIV)",
+      "category_key": "ff14",
+      "title": "7.56パッチノート公開！",
+      "url": "https://jp.finalfantasyxiv.com/lodestone/topics/detail/67caf3b6b5e0ee7569afb5ec8bdcae5113f9df49",
+      "summary": "ハルマルトが告げた、すべての世界を待ち受ける「明日の果て」。その運命を覆すべく、冒険者たちは再び歩み始めます。 さらにパッチ7.56では、新たなリミテッドジョブ「魔獣使い」や魔獣使い専用のバトルコンテンツ「闘獣練」が追加されるほか、「至天の座アルカディア零式：ヘビー級」の週制限が撤廃され、超える力が発生するようになります。 詳しくは『 こちら 』をご覧ください。",
+      "business_impact": "→ アップデート内容の確認と新コンテンツ攻略の計画",
+      "raw_score": 0,
+      "normalized_score": 17.0,
+      "published_at": "2026-09-08T06:15:00Z"
     },
     {
-      "source": "Hatebu",
-      "title": "x86時代の終焉か。NVIDIAの完全自社設計CPU「Vera」が叩き出したIntel、AMDを凌駕する驚愕のベンチマーク | XenoSpectrum",
-      "url": "https://xenospectrum.com/nvidia-vera-cpu-benchmarks-x86-arm-olympus-architecture/",
-      "raw_score": 16,
-      "published_at": "",
-      "normalized_score": 0.2,
-      "is_boosted": false
+      "source": "⚔️ FFXIV Lodestone 公式Topics",
+      "category": "FF14 (ファイナルファンタジーXIV)",
+      "category_key": "ff14",
+      "title": "「ファンフェスティバル 2026 in 東京」ライブビューイング開催決定！ チケット販売は9月11日（金）から",
+      "url": "https://jp.finalfantasyxiv.com/lodestone/topics/detail/35d881d22728101355344b8a775e1560684e0bab",
+      "summary": "「ファンフェスティバル 2026 in 東京」のステージプログラム「基調講演」、「スペシャルライブ - THE PRIMALS」のライブビューイング開催が決定しました！ 現地に来られない方も、全国のイオンシネマで、大スクリーンならではの迫力と臨場感でステージをお楽しみいただけます。応援上映のため、声出しやペンライトの使用もOK！ 当日は会場の光の戦士たちと一緒に盛り上がりましょう！ 詳しくは『 こちら 』をご覧ください。",
+      "business_impact": "→ コミュニティ動向とトレンド装備・金策情報のチェック",
+      "raw_score": 0,
+      "normalized_score": 17.0,
+      "published_at": "2026-09-04T09:00:00Z"
     },
     {
-      "source": "HackerNews",
-      "title": "Unicode 18.0.0 Beta",
-      "url": "https://www.unicode.org/versions/Unicode18.0.0/",
-      "raw_score": 12,
-      "published_at": "2026-05-27T07:28:25+00:00",
-      "normalized_score": 0.0,
-      "is_boosted": false
+      "source": "⚔️ FFXIV Lodestone 公式Topics",
+      "category": "FF14 (ファイナルファンタジーXIV)",
+      "category_key": "ff14",
+      "title": "「黄金秘話」第6話公開！",
+      "url": "https://jp.finalfantasyxiv.com/lodestone/topics/detail/a4ae60b835f3334555703c6b0fd3eae3b2fb4e1d",
+      "summary": "これまで歩んできた物語に寄り添う、特別に綴られた読み物、「黄金秘話」を更新しました。 今回は、「第6話： 幼き兄妹の決意」をお届けします。 黄金秘話特設ページは『 こちら 』。 ※黄金秘話は「黄金のレガシー」のストーリーやコンテンツのネタバレを含むため、コンプリートしていない方はご注意ください。 ※全4回（第5～8話）の更新を予定しています。",
+      "business_impact": "→ コミュニティ動向とトレンド装備・金策情報のチェック",
+      "raw_score": 0,
+      "normalized_score": 17.0,
+      "published_at": "2026-09-04T08:00:00Z"
+    },
+    {
+      "source": "⚔️ FFXIV Lodestone 公式Topics",
+      "category": "FF14 (ファイナルファンタジーXIV)",
+      "category_key": "ff14",
+      "title": "定額制聴き放題サービスで「黄金のレガシー」サントラ第1弾 配信中！",
+      "url": "https://jp.finalfantasyxiv.com/lodestone/topics/detail/4bdf607ce27e18cf51f06c3421062a028e2da30c",
+      "summary": "2024年10月に発売された「DAWNTRAIL: FINAL FANTASY XIV Original Soundtrack」が、定額制聴き放題サービスでお楽しみいただけるようになりました！ このアルバムには、『黄金のレガシー』の主題歌「Dawntrail」をはじめ、フィールドや討滅戦、「至天の座アルカディア：ライトヘビー級」などのゲーム内楽曲66曲が収録されています。 これまでの旅の思い出を、音楽とともに振り返ってみるのはいかがでしょうか。 配信サイトは『 こちら 』でご確認ください。 ※楽",
+      "business_impact": "→ コミュニティ動向とトレンド装備・金策情報のチェック",
+      "raw_score": 0,
+      "normalized_score": 17.0,
+      "published_at": "2026-09-04T07:00:00Z"
+    },
+    {
+      "source": "⚔️ FFXIV Lodestone 公式Topics",
+      "category": "FF14 (ファイナルファンタジーXIV)",
+      "category_key": "ff14",
+      "title": "東京ゲームショウ2026 出展情報&会場グッズ販売情報！",
+      "url": "https://jp.finalfantasyxiv.com/lodestone/topics/detail/ae0caabcfeb32c5f503100419189d7de93f70a78",
+      "summary": "9月17日（木） から幕張メッセで開催される東京ゲームショウ2026に出展します。 スクウェア・エニックスブースでは、欧州ファンフェスで公開した「白銀のワンダラー」のトレーラーなどの映像を大型ビジョンで放映するほか、モーグリとアルファが遊びに来るキャラクターグリーティングを実施します。また、「FFVII リベレーション×FFXIV オリジナルバッグ」をご来場いただいた皆さんに配布予定です。 さらに、会場内のSQUARE ENIX SHOPでは新オフィシャルグッズを先行販売します。 詳しくは『 こ",
+      "business_impact": "→ コミュニティ動向とトレンド装備・金策情報のチェック",
+      "raw_score": 0,
+      "normalized_score": 17.0,
+      "published_at": "2026-09-04T03:00:00Z"
+    },
+    {
+      "source": "🎮 AUTOMATON",
+      "category": "ゲーム全般・エンタメ",
+      "category_key": "game",
+      "title": "Ubisoft、Steamでの“ランチャー二重起動”を順次廃止へ。まずは『プリンス オブ ペルシャ 失われた王冠』からテスト中",
+      "url": "https://automaton-media.com/articles/newsjp/20260911-466754/",
+      "summary": "Ubisoftは9月11日、Steam版『プリンス オブ ペルシャ 失われた王冠』にアップデートを実施。これまで必要だったUbisoft Connect PCの起動を不要とする対応が行われた。",
+      "business_impact": "→ ウィッシュリスト登録・プレイ予定タイトルの価格動向確認",
+      "raw_score": 0,
+      "normalized_score": 17.0,
+      "published_at": "Fri, 11 Sep 2026 02:40:58 +0000"
+    },
+    {
+      "source": "🎮 4Gamer.net 最新",
+      "category": "ゲーム全般・エンタメ",
+      "category_key": "game",
+      "title": "「Infinity: HexaDome Tactics」，Steamで配信開始。SFボードゲーム「Infinity」の世界を舞台にした1対1のターン制アリーナ・タクティクスゲーム",
+      "url": "https://www.4gamer.net/games/967/G096799/20260911005/",
+      "summary": "BlindspotGamesは2026年9月11日，PCゲーム「Infinity:HexaDomeTactics」をSteamで配信した。価格は2600円（税込）。本作はSFボードゲーム「Infinity」の世界を舞台にした1対1のターン制アリーナ・タクティクスゲームだ。",
+      "business_impact": "→ ウィッシュリスト登録・プレイ予定タイトルの価格動向確認",
+      "raw_score": 0,
+      "normalized_score": 17.0,
+      "published_at": "2026-09-11T11:46:34+09:00"
+    },
+    {
+      "source": "🎮 4Gamer.net 最新",
+      "category": "ゲーム全般・エンタメ",
+      "category_key": "game",
+      "title": "育てた宇宙生物に意識を移して戦う，育成×TPSアクション「ボイドリング・バウンド」（あかねのSteam Pick Up！）",
+      "url": "https://www.4gamer.net/games/025/G102544/20260909032/",
+      "summary": "本日の「あかねのSteamPickUp！」では，育てた宇宙生物に神経接続し，自ら操作して戦う育成アクション「ボイドリング・バウンド」を紹介。宇宙生物ボイドリングを進化や交配で育て上げ，惑星を蝕む脅威へ立ち向かうのじゃ。",
+      "business_impact": "→ ウィッシュリスト登録・プレイ予定タイトルの価格動向確認",
+      "raw_score": 0,
+      "normalized_score": 17.0,
+      "published_at": "2026-09-11T08:00:00+09:00"
+    },
+    {
+      "source": "🎮 Game*Spark",
+      "category": "ゲーム全般・エンタメ",
+      "category_key": "game",
+      "title": "ユービーアイ製PCゲーが遊びやすくなるかも…まずはSteam版『プリンス オブ ペルシャ 失われた王冠』にてUbisoft ConnectのPCランチャーのインストール・起動が不要に",
+      "url": "http://www.gamespark.jp/article/2026/09/11/172122.html",
+      "summary": "ユービーアイ製PCゲーが遊びやすくなるかも…まずはSteam版『プリンス オブ ペルシャ 失われた王冠』にてUbisoft ConnectのPCランチャーのインストール・起動が不要に",
+      "business_impact": "→ ウィッシュリスト登録・プレイ予定タイトルの価格動向確認",
+      "raw_score": 0,
+      "normalized_score": 17.0,
+      "published_at": "2026-09-11T02:41:41Z"
+    },
+    {
+      "source": "🎮 Game*Spark",
+      "category": "ゲーム全般・エンタメ",
+      "category_key": "game",
+      "title": "「非常に好評」帰宅を目指す協力アドベンチャー『RV There Yet?』湾岸の新ステージ配信開始―Steam版の過去最安セールも開催",
+      "url": "http://www.gamespark.jp/article/2026/09/11/172118.html",
+      "summary": "「非常に好評」帰宅を目指す協力アドベンチャー『RV There Yet?』湾岸の新ステージ配信開始―Steam版の過去最安セールも開催",
+      "business_impact": "→ ウィッシュリスト登録・プレイ予定タイトルの価格動向確認",
+      "raw_score": 0,
+      "normalized_score": 17.0,
+      "published_at": "2026-09-10T22:00:04Z"
     }
   ]
 }

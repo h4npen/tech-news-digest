@@ -1,10 +1,12 @@
 name: Update News and Deploy to GitHub Pages
 
 on:
-  # Google APIの課金体系変更に伴い定期実行を一時停止
-  # schedule:
-  #   - cron: '0 */6 * * *' # 6時間ごとに実行
-  workflow_dispatch: # 手動実行のみ可能
+  schedule:
+    # 毎朝 07:00 JST (UTC 22:00 前日)
+    - cron: '0 22 * * *'
+    # 毎夕 18:00 JST (UTC 09:00 当日)
+    - cron: '0 9 * * *'
+  workflow_dispatch: # GitHub画面からの手動即時実行も可能
 
 permissions:
   contents: write
@@ -24,25 +26,29 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # 最新のコミットをプッシュするために必要
           token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
           
-      - name: Fetch News
+      - name: Install Python dependencies
         run: |
-          python scripts/fetch_news.py
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
           
-      - name: Commit and Push Data
+      - name: Generate Newspaper & Fetch News
+        run: |
+          python scripts/generate_newspaper.py
+          
+      - name: Commit and Push Data & Newspapers
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data.json
-          git commit -m "chore: auto-update news data [skip ci]" || exit 0
-          git push origin master
+          git add public/data.json public/morning.html public/evening.html
+          git commit -m "chore: auto-update newspaper and news data [skip ci]" || exit 0
+          git push origin master || git push origin main || true
           
       - name: Set up Node.js
         uses: actions/setup-node@v4

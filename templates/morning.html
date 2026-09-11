@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ newspaper_title }} - {{ issue_date }}</title>
+  <style>
+    :root {
+      --primary-navy: #1a2847;
+      --accent-red: #c83232;
+      --bg-cream: #fdfbf7;
+      --card-bg: #ffffff;
+      --text-main: #222222;
+      --text-muted: #666666;
+      --border-color: #d1d5db;
+      --impact-bg: #fff9e6;
+      --impact-border: #f39c12;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+      background-color: #f0f2f5;
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 20px 10px;
+    }
+
+    .top-bar {
+      max-width: 980px;
+      margin: 0 auto 12px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    .top-bar a {
+      color: var(--primary-navy);
+      text-decoration: none;
+      font-weight: bold;
+      background: #ffffff;
+      padding: 6px 12px;
+      border-radius: 4px;
+      border: 1px solid #cbd5e1;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .top-bar a:hover {
+      background: #e2e8f0;
+    }
+
+    .newspaper-container {
+      max-width: 980px;
+      margin: 0 auto;
+      background: #ffffff;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    /* ヘッダー */
+    .newspaper-header {
+      background: var(--primary-navy);
+      color: #ffffff;
+      padding: 24px 32px 18px 32px;
+      border-bottom: 4px solid var(--accent-red);
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-bottom: 1px solid rgba(255,255,255,0.25);
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+    }
+
+    .newspaper-name {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", "游明朝", serif;
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .edition-badge {
+      background: var(--accent-red);
+      color: #fff;
+      font-size: 13px;
+      font-family: sans-serif;
+      padding: 3px 8px;
+      border-radius: 4px;
+      letter-spacing: 1px;
+    }
+
+    .header-meta {
+      text-align: right;
+      font-size: 12px;
+      color: #cbd5e1;
+    }
+
+    .header-quote {
+      font-size: 13px;
+      color: #e2e8f0;
+      font-style: italic;
+    }
+
+    /* ナビゲーションバー */
+    .nav-bar {
+      background: #f8fafc;
+      border-bottom: 2px solid #e2e8f0;
+      padding: 10px 24px;
+      display: flex;
+      gap: 16px;
+      font-weight: bold;
+      font-size: 13px;
+      overflow-x: auto;
+    }
+
+    .nav-item {
+      color: var(--primary-navy);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+
+    .nav-item:hover {
+      background: #e2e8f0;
+    }
+
+    /* メインコンテンツ */
+    .main-body {
+      padding: 24px;
+    }
+
+    /* 一面トップニュース */
+    .headline-section {
+      background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
+      border: 2px solid var(--primary-navy);
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 32px;
+      position: relative;
+    }
+
+    .headline-tag {
+      display: inline-block;
+      background: var(--accent-red);
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin-bottom: 8px;
+    }
+
+    .headline-title {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .headline-title a {
+      color: var(--primary-navy);
+      text-decoration: none;
+    }
+    .headline-title a:hover {
+      color: var(--accent-red);
+      text-decoration: underline;
+    }
+
+    .headline-impact {
+      background: var(--impact-bg);
+      border-left: 4px solid var(--impact-border);
+      padding: 10px 14px;
+      margin-top: 12px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #8a5300;
+    }
+
+    /* カテゴリセクション */
+    .category-section {
+      margin-bottom: 36px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--primary-navy);
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--primary-navy);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-count {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* 記事グリッド */
+    .article-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .article-card {
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 14px;
+      background: #ffffff;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+
+    .article-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      border-color: #cbd5e1;
+    }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+      font-size: 12px;
+    }
+
+    .card-source {
+      color: var(--accent-red);
+      font-weight: bold;
+    }
+
+    .card-score {
+      background: #e2e8f0;
+      color: #475569;
+      padding: 1px 6px;
+      border-radius: 3px;
+      font-size: 11px;
+    }
+
+    .card-title {
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+
+    .card-title a {
+      color: #1e293b;
+      text-decoration: none;
+    }
+
+    .card-title a:hover {
+      color: var(--accent-red);
+      text-decoration: underline;
+    }
+
+    .card-summary {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .card-impact {
+      background: var(--impact-bg);
+      border-left: 3px solid var(--impact-border);
+      padding: 6px 10px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #8a5300;
+      border-radius: 0 4px 4px 0;
+    }
+
+    /* フッター */
+    .newspaper-footer {
+      background: #f8fafc;
+      border-top: 1px solid #e2e8f0;
+      padding: 18px 24px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <a href="./">🏠 TECH NEWS DIGEST ポータルへ戻る</a>
+    <a href="evening.html">🌙 今夕の夕刊を読む</a>
+  </div>
+
+  <div class="newspaper-container">
+    <!-- ヘッダー -->
+    <header class="newspaper-header">
+      <div class="header-top">
+        <h1 class="newspaper-name">
+          {{ newspaper_title }}
+          <span class="edition-badge">朝刊</span>
+        </h1>
+        <div class="header-meta">
+          <div><strong>第 {{ issue_number }} 号</strong></div>
+          <div>{{ issue_date }} 発行</div>
+        </div>
+      </div>
+      <div class="header-quote">
+        「朝の5分で重要ニュースを把握し、今日の行動を決める」
+      </div>
+    </header>
+
+    <!-- ナビゲーション -->
+    <nav class="nav-bar">
+      {% for cat_key, cat in categories.items() %}
+      <a href="#cat-{{ cat_key }}" class="nav-item">
+        <span>{{ cat.icon }}</span> {{ cat.name }}
+      </a>
+      {% endfor %}
+    </nav>
+
+    <!-- 本文 -->
+    <main class="main-body">
+
+      <!-- 一面トップ注目ニュース -->
+      {% if top_headline %}
+      <section class="headline-section">
+        <span class="headline-tag">★ 今朝の一面トップ記事</span>
+        <h2 class="headline-title">
+          <a href="{{ top_headline.url }}" target="_blank" rel="noopener noreferrer">
+            {{ top_headline.title }}
+          </a>
+        </h2>
+        <div class="card-meta">
+          <span class="card-source">{{ top_headline.source }}</span>
+          <span class="card-score">注目スコア: {{ top_headline.score }}pt</span>
+        </div>
+        <p class="card-summary">{{ top_headline.summary }}</p>
+        <div class="headline-impact">
+          {{ top_headline.business_impact }}
+        </div>
+      </section>
+      {% endif %}
+
+      <!-- 各カテゴリニュース -->
+      {% for cat_key, cat in categories.items() %}
+      <section class="category-section" id="cat-{{ cat_key }}">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span>{{ cat.icon }}</span> {{ cat.name }}
+          </h2>
+          <span class="section-count">厳選 {{ cat.articles | length }} 本</span>
+        </div>
+
+        <div class="article-grid">
+          {% for art in cat.articles %}
+          <article class="article-card">
+            <div class="card-meta">
+              <span class="card-source">{{ art.source }}</span>
+              <span class="card-score">スコア: {{ art.score }}pt</span>
+              {% if art.hatebu_count > 0 %}
+              <span style="color: #ff4500; font-weight: bold; font-size: 11px;">🔖 {{ art.hatebu_count }} users</span>
+              {% endif %}
+            </div>
+            <h3 class="card-title">
+              <a href="{{ art.url }}" target="_blank" rel="noopener noreferrer">
+                {{ art.title }}
+              </a>
+            </h3>
+            <p class="card-summary">{{ art.summary }}</p>
+            <div class="card-impact">
+              {{ art.business_impact }}
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+      {% endfor %}
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="newspaper-footer">
+      <p>発行: TECH NEWS DIGEST 新聞自動生成システム | 毎朝の5分でスマートな情報収集を</p>
+    </footer>
+  </div>
+
+</body>
+</html>
